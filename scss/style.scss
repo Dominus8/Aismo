@@ -12,12 +12,12 @@
     text-transform: uppercase;
   }
   &__logo {
-    color: $accent;
+    color: $secondary;
     padding-right: 60px;
     font-size: 18px;
   }
   &__logo span {
-    color: $secondary;
+    color: $accent;
   }
   .menu__list {
     display: flex;
@@ -29,4 +29,27 @@
     padding: 10px 0;
     cursor: pointer;
   }
+}
+
+.hero {
+  position: relative;
+  background-image: $gradient;
+  &__content {
+    color: $white;
+    position: relative;
+    bottom: 0;
+    max-width: 552px;
+  }
+  &__title {
+    font-size: 68px;
+  }
+  &__title span {
+    color: $accent;
+  }
+  &__content p {
+    font-size: 26px;
+    font-weight: 300;
+    text-align: center;
+  }
+
 }

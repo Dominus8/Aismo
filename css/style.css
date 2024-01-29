@@ -106,12 +106,12 @@ body {
   text-transform: uppercase;
 }
 .header__logo {
-  color: #DF6F5B;
+  color: #FDC055;
   padding-right: 60px;
   font-size: 18px;
 }
 .header__logo span {
-  color: #FDC055;
+  color: #DF6F5B;
 }
 .header .menu__list {
   display: flex;
@@ -122,6 +122,28 @@ body {
   border: none;
   padding: 10px 0;
   cursor: pointer;
+}
+
+.hero {
+  position: relative;
+  background-image: linear-gradient(270deg, #8EDACF -1.5%, #50B0A2 50.97%, #336099 92.34%);
+}
+.hero__content {
+  color: #FFFFFF;
+  position: relative;
+  bottom: 0;
+  max-width: 552px;
+}
+.hero__title {
+  font-size: 68px;
+}
+.hero__title span {
+  color: #DF6F5B;
+}
+.hero__content p {
+  font-size: 26px;
+  font-weight: 300;
+  text-align: center;
 }
 
 /*# sourceMappingURL=style.css.map */
