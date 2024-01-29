@@ -30,15 +30,30 @@ body {
 	flex: 1 0 auto;
 }
 
+.container{
+	max-width: 1770px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+
+.btn {
+	border: 0;
+	padding: 20px 50px;
+	border-radius: 5px;
+	box-shadow: 0px 0.042px 2.214px 0px rgba(29, 49, 56, 0.12),
+				0px -1.253px 5.32px 0px rgba(29, 49, 56, 0.17),
+				0px -4.344px 10.017px 0px rgba(29, 49, 56, 0.19),
+				0px -10.095px 17.869px 0px rgba(29, 49, 56, 0.20),
+				0px -20.572px 33.422px 0px rgba(29, 49, 56, 0.21),
+				0px -46px 80px 0px rgba(29, 49, 56, 0.26);
+	cursor: pointer;
+
+}
+
 .footer {
 	flex: 0 0 auto;
 }
 
-.container{
-  max-width: 1770px;
-  margin: 0 auto;
-  padding: 0 15px;
-}
 
 
 

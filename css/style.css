@@ -47,6 +47,7 @@ button,
 textarea,
 select {
   font: inherit;
+  color: inherit;
 }
 
 a {
@@ -86,14 +87,22 @@ body {
   flex: 1 0 auto;
 }
 
-.footer {
-  flex: 0 0 auto;
-}
-
 .container {
   max-width: 1770px;
   margin: 0 auto;
   padding: 0 15px;
+}
+
+.btn {
+  border: 0;
+  padding: 20px 50px;
+  border-radius: 5px;
+  box-shadow: 0px 0.042px 2.214px 0px rgba(29, 49, 56, 0.12), 0px -1.253px 5.32px 0px rgba(29, 49, 56, 0.17), 0px -4.344px 10.017px 0px rgba(29, 49, 56, 0.19), 0px -10.095px 17.869px 0px rgba(29, 49, 56, 0.2), 0px -20.572px 33.422px 0px rgba(29, 49, 56, 0.21), 0px -46px 80px 0px rgba(29, 49, 56, 0.26);
+  cursor: pointer;
+}
+
+.footer {
+  flex: 0 0 auto;
 }
 
 /*---------- header ----------*/
@@ -132,11 +141,11 @@ body {
 .hero:after {
   position: absolute;
   content: "";
-  width: 100%;
-  height: 100%;
+  right: 0;
+  width: 280px;
+  height: 237px;
   background-image: url("../images/hero-tongue.svg");
   background-repeat: no-repeat;
-  background-position: right top;
 }
 .hero .container {
   padding-right: 0;
@@ -176,5 +185,31 @@ body {
 }
 
 /*---------- projects ----------*/
+.projects {
+  display: flex;
+  justify-content: center;
+}
+.projects__sidebar {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  border-radius: 0px 0px 50px 0px;
+  background-color: #C0E3DE;
+  width: 30%;
+  padding: 36px 50px 58px 15px;
+}
+.projects .menu {
+  margin-bottom: 44px;
+  max-width: 440px;
+}
+.projects .menu__list-item:not(:last-child) {
+  padding-bottom: 28px;
+}
+.projects__sidebar-btn {
+  margin-right: 130px;
+}
+.projects__gallery {
+  width: 70%;
+}
 
 /*# sourceMappingURL=style.css.map */
