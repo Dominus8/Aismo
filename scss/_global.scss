@@ -1,0 +1,44 @@
+html,
+body {
+	height: 100%;
+}
+
+body {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 700;
+	font-size: 16px;
+	color: $default;
+	overflow-x: hidden;
+	min-width: 320px;
+}
+
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	min-height: 100%;
+}
+
+.logo {
+	display: flex;
+	align-items: center;
+	p {
+		padding-left: 9px;
+	}
+}
+
+.main {
+	flex: 1 0 auto;
+}
+
+.footer {
+	flex: 0 0 auto;
+}
+
+.container{
+  max-width: 1770px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+
+

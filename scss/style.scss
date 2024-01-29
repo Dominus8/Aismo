@@ -1,0 +1,32 @@
+@import 'vars';
+@import 'reset';
+@import 'global';
+
+.header {
+  &__inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    height: 100px;
+    text-transform: uppercase;
+  }
+  &__logo {
+    color: $accent;
+    padding-right: 60px;
+    font-size: 18px;
+  }
+  &__logo span {
+    color: $secondary;
+  }
+  .menu__list {
+    display: flex;
+    gap: 40px;
+  }
+  &__btn {
+    background-color: transparent;
+    border: none;
+    padding: 10px 0;
+    cursor: pointer;
+  }
+}
