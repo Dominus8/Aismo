@@ -2,6 +2,7 @@
 @import 'reset';
 @import 'global';
 
+/*---------- header ----------*/
 .header {
   &__inner {
     display: flex;
@@ -12,12 +13,12 @@
     text-transform: uppercase;
   }
   &__logo {
-    color: $accent;
+    color: $secondary;
     padding-right: 60px;
     font-size: 18px;
   }
   &__logo span {
-    color: $secondary;
+    color: $accent;
   }
   .menu__list {
     display: flex;
@@ -28,5 +29,56 @@
     border: none;
     padding: 10px 0;
     cursor: pointer;
+  }
+}
+
+/*---------- hero ----------*/
+.hero {
+  position: relative;
+  background-image: $gradient;
+  &:after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-image: url("../images/hero-tongue.svg");
+    background-repeat: no-repeat;
+    background-position: right top;
+  }
+  .container {
+    padding-right: 0;
+  }
+  &__inner {
+    position: relative;
+  }
+  &__inner:after {
+    position: absolute;
+    content: "";
+    top: 60px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin-left: 100px;
+    background-image: url("../images/hero-bg.png");
+    background-repeat: no-repeat;
+  }
+  &__content {
+    color: $white;
+    padding-top: 210px;
+    padding-bottom: 73px;
+    max-width: 552px;
+  }
+  &__title {
+    font-size: 68px;
+    padding-left: 42px;
+    padding-bottom: 33px;
+  }
+  &__title span {
+    color: $accent;
+  }
+  &__content p {
+    font-size: 26px;
+    font-weight: 300;
+    text-align: center;
   }
 }
