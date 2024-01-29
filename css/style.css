@@ -101,7 +101,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 40px;
+  gap: 70px;
   height: 100px;
   text-transform: uppercase;
 }
@@ -174,5 +174,7 @@ body {
   font-weight: 300;
   text-align: center;
 }
+
+/*---------- projects ----------*/
 
 /*# sourceMappingURL=style.css.map */
