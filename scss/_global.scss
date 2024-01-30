@@ -2,7 +2,6 @@ html,
 body {
 	height: 100%;
 }
-
 body {
 	font-family: 'Roboto', sans-serif;
 	font-weight: 700;
@@ -11,13 +10,11 @@ body {
 	overflow-x: hidden;
 	min-width: 320px;
 }
-
 .wrapper {
 	display: flex;
 	flex-direction: column;
 	min-height: 100%;
 }
-
 .logo {
 	display: flex;
 	align-items: center;
@@ -25,17 +22,14 @@ body {
 		padding-left: 9px;
 	}
 }
-
 .main {
 	flex: 1 0 auto;
 }
-
 .container{
 	max-width: 1770px;
 	margin: 0 auto;
 	padding: 0 15px;
 }
-
 .btn {
 	border: 0;
 	padding: 20px 50px;
@@ -48,11 +42,6 @@ body {
 				0px -46px 80px 0px rgba(29, 49, 56, 0.26);
 	cursor: pointer;
 }
-
 .footer {
 	flex: 0 0 auto;
 }
-
-
-
-
