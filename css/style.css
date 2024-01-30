@@ -190,6 +190,7 @@ body {
   justify-content: center;
 }
 .projects__sidebar {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
@@ -197,6 +198,16 @@ body {
   background-color: #C0E3DE;
   width: 30%;
   padding: 36px 50px 58px 15px;
+}
+.projects__sidebar:after {
+  position: absolute;
+  content: "";
+  left: 150px;
+  bottom: -237px;
+  width: 280px;
+  height: 237px;
+  background-image: url("../images/projects-tongue.svg");
+  background-repeat: no-repeat;
 }
 .projects .menu {
   margin-bottom: 44px;
