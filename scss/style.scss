@@ -92,7 +92,7 @@
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    border-radius: 0px 0px 50px 0px;
+    border-radius: 0 0 50px 0;
     background-color: $background;
     width: 30%;
     padding: 36px 50px 58px 15px;
@@ -120,4 +120,46 @@
   &__gallery {
     width: 70%;
   }
+  &__gallery-title {
+    display: flex;
+    align-items: center;
+    font-size: 36px;
+    font-weight: 500;
+    color: $white;
+    background-color: $title-background;
+    border-radius: 50px 0 0 0;
+    margin: 30px 0 35px 70px;
+    padding: 20px 30px 20px 80px;
+  }
+  .title-line {
+    position: relative;
+    margin-left: 30px;
+    border-bottom: 2px dashed $white;
+    flex: 1 0 auto;
+    top: 50%;
+    transform: translateY(50%);
+    &:before {
+      position: absolute;
+      content: "";
+      top: -4px;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background-color: $white;
+    }
+    &:after {
+      position: absolute;
+      content: "";
+      top: -4px;
+      right: 0;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      box-shadow:  0 0 0 11px #6DB9AE;
+      background-color: $white;
+      outline: 2px dashed $white;
+      outline-offset: 10px;
+    }
+  }
+
 }
