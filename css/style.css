@@ -310,4 +310,56 @@ body {
   background-color: #336099;
 }
 
+/*---------- consultation ----------*/
+.consultation {
+  background-image: linear-gradient(270deg, #A5FAEE -1.5%, #50B0A2 50.97%, #336099 92.34%);
+}
+.consultation .container {
+  position: relative;
+}
+.consultation .container:before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transform: translateY(50px);
+  background-image: url("../images/consultation-bg.png");
+  background-repeat: no-repeat;
+  background-position: right;
+}
+.consultation .container:after {
+  position: absolute;
+  content: "";
+  right: 350px;
+  bottom: -237px;
+  width: 280px;
+  height: 237px;
+  background-image: url("../images/consultation-tongue.svg");
+  background-repeat: no-repeat;
+}
+.consultation__content {
+  position: relative;
+  z-index: 5;
+  max-width: 600px;
+  color: #FFFFFF;
+  padding: 210px 0 210px 80px;
+}
+.consultation__content-title {
+  font-size: 40px;
+  font-weight: 500;
+}
+.consultation__content p {
+  font-weight: 500;
+  font-size: 18px;
+  padding: 26px 0 64px;
+}
+.consultation__content-link {
+  text-decoration: underline;
+}
+.consultation__content-btn {
+  color: #336099;
+}
+
 /*# sourceMappingURL=style.css.map */
