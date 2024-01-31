@@ -368,4 +368,54 @@ body {
   color: #336099;
 }
 
+/*---------- about ----------*/
+.about {
+  margin-top: 44px;
+}
+.about__band {
+  background-color: #50B0A2;
+  border-radius: 0 50px 0 0;
+  width: 40%;
+  height: 111px;
+}
+.about .container {
+  position: relative;
+}
+.about .about__title {
+  position: absolute;
+  top: -111px;
+  left: 100px;
+  font-size: 42px;
+  padding: 30px;
+  color: #FFFFFF;
+  font-weight: 500;
+}
+.about__content {
+  display: flex;
+  padding-top: 18px;
+  padding-bottom: 76px;
+}
+.about__content-block:first-child {
+  width: 40%;
+}
+.about__content-block:last-child {
+  width: 60%;
+}
+.about__content-text {
+  font-size: 18px;
+  font-weight: 500;
+  margin-left: 90px;
+}
+.about__content-text p:first-child {
+  padding-bottom: 26px;
+}
+.about__content-link {
+  margin-top: 55px;
+  margin-left: 107px;
+}
+.about__content-link .btn {
+  display: inline-block;
+  background-color: #FDC055;
+}
+
 /*# sourceMappingURL=style.css.map */
