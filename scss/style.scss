@@ -87,6 +87,7 @@
 .projects {
   display: flex;
   justify-content: center;
+  align-items: center;
   &__sidebar {
     position: relative;
     display: flex;
@@ -95,7 +96,8 @@
     border-radius: 0 0 50px 0;
     background-color: $background;
     width: 30%;
-    padding: 36px 50px 58px 15px;
+    height: 100%;
+    padding: 66px 50px 58px 15px;
   }
   &__sidebar:after {
     position: absolute;
@@ -162,7 +164,7 @@
     }
   }
   &__gallery-slider {
-    margin: 33px 0 58px 90px;
+    margin: 33px 0 30px 90px;
     max-width: 1170px;
   }
   .swiper {

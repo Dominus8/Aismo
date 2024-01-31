@@ -41,6 +41,10 @@ body {
 				0px -20.572px 33.422px 0px rgba(29, 49, 56, 0.21),
 				0px -46px 80px 0px rgba(29, 49, 56, 0.26);
 	cursor: pointer;
+	transition: all .3s ease;
+	&:hover {
+		transform: translateY(2px);
+	}
 }
 .footer {
 	flex: 0 0 auto;
