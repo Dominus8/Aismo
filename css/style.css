@@ -465,6 +465,13 @@ body {
   text-decoration: underline;
 }
 
+@media (max-width: 1790px) {
+  .hero__inner:after {
+    width: 90vw;
+    background-size: contain;
+    background-position: top;
+  }
+}
 @media (max-width: 1200px) {
   .header__inner {
     justify-content: space-between;
@@ -497,6 +504,44 @@ body {
     position: relative;
     display: flex;
     z-index: 1000;
+  }
+  .hero__inner:after {
+    top: 30px;
+    width: 100vw;
+    margin-left: 0;
+  }
+  .hero__content {
+    padding-bottom: 40px;
+  }
+  .hero__title {
+    font-size: 48px;
+  }
+}
+@media (max-width: 800px) {
+  .hero .container {
+    padding-right: 15px;
+  }
+  .hero__title {
+    padding-left: 0;
+  }
+  .hero__content {
+    padding-top: 160px;
+  }
+  .hero__content p {
+    text-align: left;
+    font-size: 22px;
+  }
+}
+@media (max-width: 600px) {
+  .hero__title {
+    font-size: 32px;
+    padding-bottom: 18px;
+  }
+  .hero__content {
+    padding-top: 120px;
+  }
+  .hero__content p {
+    font-size: 18px;
   }
 }
 

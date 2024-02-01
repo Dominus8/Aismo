@@ -1,3 +1,13 @@
+@media (max-width: 1790px) {
+  .hero {
+    &__inner:after {
+      width: 90vw;
+      background-size: contain;
+      background-position: top;
+    }
+  }
+}
+
 @media (max-width: 1200px) {
   .header {
     &__inner {
@@ -31,6 +41,52 @@
       position: relative;
       display: flex;
       z-index: 1000;
+    }
+  }
+  .hero {
+    &__inner:after {
+      top: 30px;
+      width: 100vw;
+      margin-left: 0;
+    }
+    &__content {
+      padding-bottom: 40px;
+    }
+    &__title {
+      font-size: 48px;
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  .hero {
+    .container {
+      padding-right: 15px;
+    }
+    &__title {
+      padding-left: 0;
+    }
+    &__content {
+      padding-top: 160px;
+    }
+    &__content p {
+      text-align: left;
+      font-size: 22px;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .hero {
+    &__title {
+      font-size: 32px;
+      padding-bottom: 18px;
+    }
+    &__content {
+      padding-top: 120px;
+    }
+    &__content p {
+      font-size: 18px;
     }
   }
 }
