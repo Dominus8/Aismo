@@ -1,0 +1,36 @@
+@media (max-width: 1200px) {
+  .header {
+    &__inner {
+      justify-content: space-between;
+      gap: 20px;
+    }
+    .menu {
+      position: absolute;
+      left: -100vw;
+      top: 100px;
+      background-color: $white;
+      width: 100vw;
+      height: 100vh;
+      z-index: 100;
+      transition: transform .5s;
+      border-top: 3px solid $accent;
+      box-shadow: 0px 5px 5px -5px $accent inset;
+    }
+    .menu__list {
+      margin: 40px 30px;
+      display: flex;
+      flex-direction: column;
+    }
+    .menu.open {
+      transform: translateX(100%);
+    }
+    &__glasses {
+      display: none;
+    }
+    #menuBtn {
+      position: relative;
+      display: flex;
+      z-index: 1000;
+    }
+  }
+}

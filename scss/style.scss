@@ -24,10 +24,17 @@
     display: flex;
     gap: 40px;
   }
-  &__btn {
+  &__glasses {
     background-color: transparent;
     border: none;
     padding: 10px 0;
+    cursor: pointer;
+  }
+  #menuBtn {
+    display: none;
+    font-size: 35px;
+    color: $default;
+    align-items: center;
     cursor: pointer;
   }
 }
@@ -345,3 +352,5 @@
     text-decoration: underline;
   }
 }
+
+@import 'media';

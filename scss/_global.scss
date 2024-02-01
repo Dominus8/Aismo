@@ -49,6 +49,9 @@ body {
 		transform: translateY(2px);
 	}
 }
+.no-scroll {
+	overflow-y: hidden;
+}
 .footer {
 	flex: 0 0 auto;
 }
