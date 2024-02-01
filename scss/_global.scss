@@ -35,7 +35,9 @@ body {
 }
 .btn {
 	border: 0;
-	padding: 20px 50px;
+	min-width: 180px;
+	text-align: center;
+	padding: 20px 10px;
 	border-radius: 5px;
 	box-shadow: 0 0.042px 2.214px 0 rgba(29, 49, 56, 0.12),
 				0px -1.253px 5.32px 0px rgba(29, 49, 56, 0.17),

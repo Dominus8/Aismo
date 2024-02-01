@@ -94,7 +94,6 @@
 .projects {
   display: flex;
   justify-content: center;
-  align-items: center;
   &__sidebar {
     position: relative;
     display: flex;
@@ -124,7 +123,7 @@
     padding-bottom: 28px;
   }
   &__sidebar-btn {
-    margin-right: 130px;
+    margin-left: 80px;
   }
   &__gallery {
     width: 70%;

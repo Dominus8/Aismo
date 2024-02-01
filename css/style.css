@@ -100,7 +100,9 @@ body {
 
 .btn {
   border: 0;
-  padding: 20px 50px;
+  min-width: 180px;
+  text-align: center;
+  padding: 20px 10px;
   border-radius: 5px;
   box-shadow: 0 0.042px 2.214px 0 rgba(29, 49, 56, 0.12), 0px -1.253px 5.32px 0px rgba(29, 49, 56, 0.17), 0px -4.344px 10.017px 0px rgba(29, 49, 56, 0.19), 0px -10.095px 17.869px 0px rgba(29, 49, 56, 0.2), 0px -20.572px 33.422px 0px rgba(29, 49, 56, 0.21), 0px -46px 80px 0px rgba(29, 49, 56, 0.26);
   cursor: pointer;
@@ -208,7 +210,6 @@ body {
 .projects {
   display: flex;
   justify-content: center;
-  align-items: center;
 }
 .projects__sidebar {
   position: relative;
@@ -239,7 +240,7 @@ body {
   padding-bottom: 28px;
 }
 .projects__sidebar-btn {
-  margin-right: 130px;
+  margin-left: 80px;
 }
 .projects__gallery {
   width: 70%;
@@ -465,11 +466,28 @@ body {
   text-decoration: underline;
 }
 
+@media (min-width: 2560px) {
+  .projects__gallery-slider {
+    max-width: 1570px;
+  }
+}
 @media (max-width: 1790px) {
   .hero__inner:after {
     width: 90vw;
     background-size: contain;
     background-position: top;
+  }
+  .projects__sidebar {
+    padding: 66px 20px 58px 15px;
+  }
+  .projects__sidebar:after {
+    left: 0;
+  }
+  .projects__gallery-title {
+    margin: 30px 0 35px 40px;
+  }
+  .projects__gallery-slider {
+    margin: 33px 0 30px 60px;
   }
 }
 @media (max-width: 1200px) {
@@ -516,6 +534,15 @@ body {
   .hero__title {
     font-size: 48px;
   }
+  .projects__sidebar {
+    display: none;
+  }
+  .projects__gallery {
+    width: 100%;
+  }
+  .projects__gallery-slider {
+    margin: 33px 40px 30px 40px;
+  }
 }
 @media (max-width: 800px) {
   .hero .container {
@@ -531,6 +558,12 @@ body {
     text-align: left;
     font-size: 22px;
   }
+  .projects__gallery-title {
+    margin: 30px 0 35px 15px;
+  }
+  .projects__gallery-slider {
+    margin: 33px 15px 30px 15px;
+  }
 }
 @media (max-width: 600px) {
   .hero__title {
@@ -542,6 +575,10 @@ body {
   }
   .hero__content p {
     font-size: 18px;
+  }
+  .projects__gallery-title {
+    font-size: 24px;
+    padding: 20px 30px 20px 40px;
   }
 }
 

@@ -20,7 +20,7 @@ for (let menuLink of menuLinks) {
 
 const swiper = new Swiper('.swiper', {
     loop: true,
-    slidesPerView: 3,
+    slidesPerView: 'auto',
     spaceBetween: 30,
     freeMode: true,
     autoplay: true,
@@ -30,6 +30,3 @@ const swiper = new Swiper('.swiper', {
         clickable: true,
     },
 });
-
-
-
