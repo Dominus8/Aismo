@@ -14,31 +14,30 @@
 	</head>
 	<body>
 		<div class="wrapper">
-			
 			<!---------- header start ---------->
-			<div class="header">
+			<div class="header" id="header">
 				<div class="container">
 					<div class="header__inner">
 						<a class="header__logo logo" href="#">
-							<img src="./images/logo.svg" alt="Логотип">
+							<img src="./images/header-logo.png" alt="Логотип">
 							<p><span>АИС</span><br>ПОДМОСКОВЬE</p>
 						</a>
 						<nav class="menu">
 							<ul class="menu__list">
 								<li class="menu__list-item">
-									<a class="menu__list-link" href="#">ОБ УЧРЕЖДЕНИИ</a>
+									<a class="menu__list-link" href="#about">ОБ УЧРЕЖДЕНИИ</a>
 								</li>
 								<li class="menu__list-item">
 									<a class="menu__list-link" href="#">СТРУКТУРА</a>
 								</li>
 								<li class="menu__list-item">
-									<a class="menu__list-link" href="#">ПРОЕКТЫ</a>
+									<a class="menu__list-link" href="#projects">ПРОЕКТЫ</a>
 								</li>
 								<li class="menu__list-item">
-									<a class="menu__list-link" href="#">СОТРУДНИЧЕСТВО</a>
+									<a class="menu__list-link" href="#consultation">СОТРУДНИЧЕСТВО</a>
 								</li>
 								<li class="menu__list-item">
-									<a class="menu__list-link" href="#">КОНТАКТЫ</a>
+									<a class="menu__list-link" href="#map">КОНТАКТЫ</a>
 								</li>
 							</ul>
 						</nav>
@@ -51,7 +50,6 @@
 			<!---------- header end ---------->
 			
 			<main class="main">
-				
 				<!---------- hero start ---------->
 				<section class="hero">
 					<div class="container">
@@ -67,7 +65,7 @@
 				<!---------- hero end ---------->
 				
 				<!---------- projects start ---------->
-				<section class="projects">
+				<section class="projects" id="projects">
 					<aside class="projects__sidebar">
 							<nav class="menu">
 								<ul class="menu__list">
@@ -181,7 +179,7 @@
 				<!---------- projects end ---------->
 				
 				<!---------- consultation start ---------->
-				<section class="consultation">
+				<section class="consultation" id="consultation">
 					<div class="container">
 						<div class="consultation__content">
 							<h2 class="consultation__content-title">Консультация&nbsp;специалиста</h2>
@@ -199,7 +197,7 @@
 				<!---------- consultation end ---------->
 				
 				<!---------- about start ---------->
-				<section class="about">
+				<section class="about" id="about">
 					<div class="about__band"></div>
 					<div class="container">
 						<h2 class="about__title">Об учреждении</h2>
@@ -234,17 +232,44 @@
 				<!---------- about end ---------->
 				
 				<!---------- map start ---------->
-				<section class="map">
+				<section class="map" id="map">
 					<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A7ab786ea2388f594e8b83bce2d93d983cc630c910e58d624fe4d5280ca9f969c&amp;width=100%25&amp;height=400&amp;lang=ru_RU&amp"></script>
 				</section>
 				<!---------- map end ---------->
-			
 			</main>
 			
+			<!---------- footer start ---------->
 			<footer class="footer">
-			
+				<div class="container">
+					<div class="footer__inner">
+						<div class="footer__сompany">
+							<a class="footer__logo logo" href="#header">
+								<img src="./images/footer-logo.png" alt="Логотип">
+								<p><span>АИС</span><br>ПОДМОСКОВЬE</p>
+							</a>
+							<h3 class="footer__сompany-name">
+								Государственное<br>автономное учреждение Московской области «Агентство информационных систем общего пользования «Подмосковье»
+							</h3>
+						</div>
+						<div class="footer__content">
+							<h3 class="footer__content-title">Об учреждении</h3><br>
+							<a class="footer__content-link" href="#">Информация</a>
+							<br><br>
+							<p>Документы</p>
+							<a class="footer__content-link" href="#">Отчет СОУТ раздел V</a><br>
+							<a class="footer__content-link" href="#">Отчет СОУТ раздел VI</a><br><br>
+							<a class="footer__content-link" href="https://aismo.ru/page.html" target="_blank">Политика в отношении обработки персональных данных</a>
+						</div>
+						<div class="footer__content">
+							<h3 class="footer__content-title">Контакты</h3>
+							<p>г. Москва, ул. 1-я Магистральная,<br>д. 14, стр. 8</p><br>
+							<p>Телефон: <a class="footer__content-link" href="tel: +74959909087">+7 (495) 990-90-87</a></p><br>
+							<p>E-mail: <a class="footer__content-link" href="mailto: info-ais@mosreg.ru">info-ais@mosreg.ru</a></p>
+						</div>
+					</div>
+				</div>
 			</footer>
-			
+			<!---------- footer end ---------->
 		</div>
 		
 		<!---------- libraries and plugins ---------->

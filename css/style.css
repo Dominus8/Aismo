@@ -1,3 +1,4 @@
+@charset "UTF-8";
 html {
   box-sizing: border-box;
 }
@@ -53,6 +54,10 @@ select {
 a {
   text-decoration: none;
   color: inherit;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 html,
@@ -415,6 +420,38 @@ body {
 .about__content-link .btn {
   display: inline-block;
   background-color: #FDC055;
+}
+
+/*---------- footer ----------*/
+.footer {
+  background-image: linear-gradient(270deg, #A5FAEE -1.5%, #50B0A2 50.97%, #336099 92.34%);
+}
+.footer__inner {
+  display: flex;
+  gap: 10px;
+  margin: 56px 0 59px;
+  justify-content: space-around;
+  color: #FFFFFF;
+}
+.footer__logo {
+  font-size: 32px;
+}
+.footer__сompany-name {
+  text-align: center;
+  font-size: 20px;
+  margin-top: 30px;
+  max-width: 336px;
+}
+.footer__content {
+  margin-top: 68px;
+  font-weight: 500;
+}
+.footer__content-title {
+  font-size: 18px;
+  text-transform: uppercase;
+}
+.footer__content-link {
+  text-decoration: underline;
 }
 
 /*# sourceMappingURL=style.css.map */
