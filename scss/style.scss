@@ -321,6 +321,74 @@
   }
 }
 
+/*---------- tabs ----------*/
+.structure {
+  margin: 20px 0 50px;
+  &__title {
+    color: #000;
+    font-size: 30px;
+    font-weight: 500;
+    padding-bottom: 23px;
+  }
+  .tab-nav {
+    border-bottom: 1px solid rgb(217, 217, 217);;
+  }
+  .tab-btn {
+    font-size: 18px;
+    font-weight: 400;
+    color: #000;
+    padding-inline: 0;
+    padding: 10px 20px;
+    position: relative;
+    top: 1px;
+    border: 1px solid rgb(217, 217, 217);
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: rgb(217, 217, 217);
+  }
+  .tab-btn:not(:last-child) {
+    margin-right: -5px;
+  }
+  .tab-btn-active {
+    pointer-events: none;
+    background-color: rgb(255, 255, 255);
+  }
+  .tab-content {
+    margin-top: 50px;
+  }
+  .tab-content__structure {
+    background-image: $gradient;
+  }
+  .tab-content__title {
+    position: relative;
+    top: 100px;
+    font-size: 34px;
+    color: $white;
+  }
+  .tab-content__title:after {
+    position: absolute;
+    content: "";
+    top: -70px;
+    left: 0;
+    width: 250px;
+    height: 250px;
+    background-image: url("../images/structure-logo.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  .tab-content__title span {
+    color: $accent;
+  }
+  .tab-content__img {
+    position: relative;
+    top: -100px;
+    left: 100px;
+  }
+  .tab-pane:not(.tab-pane-show) {
+    display: none;
+  }
+}
+
 /*---------- footer ----------*/
 .footer {
   background-image: $gradient;

@@ -435,6 +435,74 @@ body {
   background-color: #FDC055;
 }
 
+/*---------- tabs ----------*/
+.structure {
+  margin: 20px 0 50px;
+}
+.structure__title {
+  color: #000;
+  font-size: 30px;
+  font-weight: 500;
+  padding-bottom: 23px;
+}
+.structure .tab-nav {
+  border-bottom: 1px solid rgb(217, 217, 217);
+}
+.structure .tab-btn {
+  font-size: 18px;
+  font-weight: 400;
+  color: #000;
+  padding-inline: 0;
+  padding: 10px 20px;
+  position: relative;
+  top: 1px;
+  border: 1px solid rgb(217, 217, 217);
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: rgb(217, 217, 217);
+}
+.structure .tab-btn:not(:last-child) {
+  margin-right: -5px;
+}
+.structure .tab-btn-active {
+  pointer-events: none;
+  background-color: rgb(255, 255, 255);
+}
+.structure .tab-content {
+  margin-top: 50px;
+}
+.structure .tab-content__structure {
+  background-image: linear-gradient(270deg, #A5FAEE -1.5%, #50B0A2 50.97%, #336099 92.34%);
+}
+.structure .tab-content__title {
+  position: relative;
+  top: 100px;
+  font-size: 34px;
+  color: #FFFFFF;
+}
+.structure .tab-content__title:after {
+  position: absolute;
+  content: "";
+  top: -70px;
+  left: 0;
+  width: 250px;
+  height: 250px;
+  background-image: url("../images/structure-logo.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.structure .tab-content__title span {
+  color: #DF6F5B;
+}
+.structure .tab-content__img {
+  position: relative;
+  top: -100px;
+  left: 100px;
+}
+.structure .tab-pane:not(.tab-pane-show) {
+  display: none;
+}
+
 /*---------- footer ----------*/
 .footer {
   background-image: linear-gradient(270deg, #A5FAEE -1.5%, #50B0A2 50.97%, #336099 92.34%);
