@@ -140,6 +140,13 @@
       margin-left: 0;
     }
   }
+  .footer {
+    &__inner {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  }
 }
 
 @media (max-width: 1000px) {
@@ -246,6 +253,11 @@
     }
     .about__title {
       top: -85px;
+      font-size: 24px;
+    }
+  }
+  .footer {
+    &__logo {
       font-size: 24px;
     }
   }
