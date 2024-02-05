@@ -359,13 +359,13 @@
   .tab-content__structure {
     background-image: $gradient;
   }
-  .tab-content__title {
+  .tab-content__logo {
     position: relative;
     top: 100px;
     font-size: 34px;
     color: $white;
   }
-  .tab-content__title:after {
+  .tab-content__logo:after {
     position: absolute;
     content: "";
     top: -70px;
@@ -376,7 +376,7 @@
     background-repeat: no-repeat;
     background-size: contain;
   }
-  .tab-content__title span {
+  .tab-content__logo span {
     color: $accent;
   }
   .tab-content__img {
@@ -386,6 +386,89 @@
   }
   .tab-pane:not(.tab-pane-show) {
     display: none;
+  }
+  .tab-content__tasks {
+    font-size: 34px;
+    font-weight: 400;
+  }
+  .tab-content__tasks-header {
+    background-image: $gradient;
+  }
+  .tab-content__header-inner {
+    display: flex;
+    align-items: center;
+    gap: 130px;
+  }
+  .tab-content__title {
+    padding: 90px 0;
+    max-width: 1000px;
+    color: $white;
+    font-size: 34px;
+    font-weight: 700;
+  }
+  .tab-content__header-inner .tab-content__logo {
+    top: 30px;
+  }
+  .tab-content__tasks-header .container {
+    position: relative;
+  }
+  .tab-content__tasks-header .container:after {
+    position: absolute;
+    content: "";
+    left: -67px;
+    bottom: -237px;
+    width: 280px;
+    height: 237px;
+    background-image: url("../images/tasks-tongue.svg");
+    background-repeat: no-repeat;
+  }
+  .tab-content__task-one {
+    background-color: $background;
+    padding-top: 41px;
+    padding-bottom: 60px;
+  }
+  .task-one__title {
+    display: flex;
+    align-items: center;
+    font-size: 36px;
+    font-weight: 500;
+    background-color: $white;
+    border-radius: 50px 0 0 0;
+    margin-left: 50%;
+    margin-bottom: 35px;
+    padding: 20px 30px 20px 80px;
+    .title-line {
+      position: relative;
+      margin-left: 30px;
+      border-bottom: 2px dashed $default;
+      flex: 1 0 auto;
+      top: 50%;
+      transform: translateY(50%);
+      &:before {
+        position: absolute;
+        content: "";
+        top: -4px;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background-color: $white;
+      }
+      &:after {
+        position: absolute;
+        content: "";
+        top: -4px;
+        right: 0;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background-color: $default;
+        outline: 2px dashed $default;
+        outline-offset: 10px;
+      }
+    }
+  }
+  .task-one__text {
+    max-width: 1337px;
   }
 }
 

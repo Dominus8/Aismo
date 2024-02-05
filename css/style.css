@@ -474,13 +474,13 @@ body {
 .structure .tab-content__structure {
   background-image: linear-gradient(270deg, #A5FAEE -1.5%, #50B0A2 50.97%, #336099 92.34%);
 }
-.structure .tab-content__title {
+.structure .tab-content__logo {
   position: relative;
   top: 100px;
   font-size: 34px;
   color: #FFFFFF;
 }
-.structure .tab-content__title:after {
+.structure .tab-content__logo:after {
   position: absolute;
   content: "";
   top: -70px;
@@ -491,7 +491,7 @@ body {
   background-repeat: no-repeat;
   background-size: contain;
 }
-.structure .tab-content__title span {
+.structure .tab-content__logo span {
   color: #DF6F5B;
 }
 .structure .tab-content__img {
@@ -501,6 +501,89 @@ body {
 }
 .structure .tab-pane:not(.tab-pane-show) {
   display: none;
+}
+.structure .tab-content__tasks {
+  font-size: 34px;
+  font-weight: 400;
+}
+.structure .tab-content__tasks-header {
+  background-image: linear-gradient(270deg, #A5FAEE -1.5%, #50B0A2 50.97%, #336099 92.34%);
+}
+.structure .tab-content__header-inner {
+  display: flex;
+  align-items: center;
+  gap: 130px;
+}
+.structure .tab-content__title {
+  padding: 90px 0;
+  max-width: 1000px;
+  color: #FFFFFF;
+  font-size: 34px;
+  font-weight: 700;
+}
+.structure .tab-content__header-inner .tab-content__logo {
+  top: 30px;
+}
+.structure .tab-content__tasks-header .container {
+  position: relative;
+}
+.structure .tab-content__tasks-header .container:after {
+  position: absolute;
+  content: "";
+  left: -67px;
+  bottom: -237px;
+  width: 280px;
+  height: 237px;
+  background-image: url("../images/tasks-tongue.svg");
+  background-repeat: no-repeat;
+}
+.structure .tab-content__task-one {
+  background-color: #C0E3DE;
+  padding-top: 41px;
+  padding-bottom: 60px;
+}
+.structure .task-one__title {
+  display: flex;
+  align-items: center;
+  font-size: 36px;
+  font-weight: 500;
+  background-color: #FFFFFF;
+  border-radius: 50px 0 0 0;
+  margin-left: 50%;
+  margin-bottom: 35px;
+  padding: 20px 30px 20px 80px;
+}
+.structure .task-one__title .title-line {
+  position: relative;
+  margin-left: 30px;
+  border-bottom: 2px dashed #336099;
+  flex: 1 0 auto;
+  top: 50%;
+  transform: translateY(50%);
+}
+.structure .task-one__title .title-line:before {
+  position: absolute;
+  content: "";
+  top: -4px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #FFFFFF;
+}
+.structure .task-one__title .title-line:after {
+  position: absolute;
+  content: "";
+  top: -4px;
+  right: 0;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #336099;
+  outline: 2px dashed #336099;
+  outline-offset: 10px;
+}
+.structure .task-one__text {
+  max-width: 1337px;
 }
 
 /*---------- footer ----------*/
