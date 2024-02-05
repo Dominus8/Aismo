@@ -472,6 +472,9 @@
   .task-one__text {
     max-width: 1337px;
   }
+  .tab-content__task-two {
+    padding-bottom: 100px;
+  }
   .task-two__title {
     display: flex;
     flex-direction: row-reverse;
@@ -524,6 +527,45 @@
   }
   .task-two__text {
     max-width: 1017px;
+  }
+  .tab-content__task-three {
+    background-color: $background;
+    border-radius: 50px 0 50px 0;
+    padding-top: 41px;
+    padding-bottom: 60px;
+  }
+  .task-three__title {
+    color: $white;
+    background-image: $reverse-gradient;
+    margin-bottom: 80px;
+    margin-left: 50px;
+    padding: 16px;
+    border-radius: 50px 0 0 0;
+  }
+  .task-three__title .container {
+    margin-left: 15px;
+    max-width: 1287px;
+  }
+  .task-three__content {
+    display: flex;
+    justify-content: space-between;
+  }
+  .task-three__list {
+    max-width: 1287px;
+    padding-bottom: 80px;
+  }
+  .task-three__list-item:before {
+    content: "- ";
+  }
+  .task-three__img {
+    padding-top: 30px;
+    object-fit: cover;
+  }
+  .task-three__content-link .btn {
+    font-size: 16px;
+    font-weight: 800;
+    display: inline-block;
+    background-color: $white;
   }
 }
 

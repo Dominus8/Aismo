@@ -158,7 +158,7 @@ body {
 /*---------- hero ----------*/
 .hero {
   position: relative;
-  background-image: linear-gradient(270deg, #A5FAEE -1.5%, #50B0A2 50.97%, #336099 92.34%);
+  background-image: linear-gradient(270deg, #86e3d4 -1.5%, #50B0A2 50.97%, #336099 92.34%);
 }
 .hero:after {
   position: absolute;
@@ -335,7 +335,7 @@ body {
 
 /*---------- consultation ----------*/
 .consultation {
-  background-image: linear-gradient(270deg, #A5FAEE -1.5%, #50B0A2 50.97%, #336099 92.34%);
+  background-image: linear-gradient(270deg, #86e3d4 -1.5%, #50B0A2 50.97%, #336099 92.34%);
 }
 .consultation .container {
   position: relative;
@@ -472,7 +472,7 @@ body {
   margin-top: 50px;
 }
 .structure .tab-content__structure {
-  background-image: linear-gradient(270deg, #A5FAEE -1.5%, #50B0A2 50.97%, #336099 92.34%);
+  background-image: linear-gradient(270deg, #86e3d4 -1.5%, #50B0A2 50.97%, #336099 92.34%);
 }
 .structure .tab-content__logo {
   position: relative;
@@ -507,7 +507,7 @@ body {
   font-weight: 400;
 }
 .structure .tab-content__tasks-header {
-  background-image: linear-gradient(270deg, #A5FAEE -1.5%, #50B0A2 50.97%, #336099 92.34%);
+  background-image: linear-gradient(270deg, #86e3d4 -1.5%, #50B0A2 50.97%, #336099 92.34%);
 }
 .structure .tab-content__header-inner {
   display: flex;
@@ -587,6 +587,9 @@ body {
 .structure .task-one__text {
   max-width: 1337px;
 }
+.structure .tab-content__task-two {
+  padding-bottom: 100px;
+}
 .structure .task-two__title {
   display: flex;
   flex-direction: row-reverse;
@@ -594,7 +597,7 @@ body {
   font-size: 36px;
   font-weight: 500;
   color: #FFFFFF;
-  background-image: linear-gradient(270deg, #A5FAEE -1.5%, #50B0A2 50.97%, #336099 92.34%);
+  background-image: linear-gradient(270deg, #86e3d4 -1.5%, #50B0A2 50.97%, #336099 92.34%);
   border-radius: 0 50px 0 0;
   margin-top: 42px;
   margin-right: 40%;
@@ -640,10 +643,49 @@ body {
 .structure .task-two__text {
   max-width: 1017px;
 }
+.structure .tab-content__task-three {
+  background-color: #C0E3DE;
+  border-radius: 50px 0 50px 0;
+  padding-top: 41px;
+  padding-bottom: 60px;
+}
+.structure .task-three__title {
+  color: #FFFFFF;
+  background-image: linear-gradient(270deg, #336099 -1.5%, #50B0A2 50.97%, #86e3d4 92.34%);
+  margin-bottom: 80px;
+  margin-left: 50px;
+  padding: 16px;
+  border-radius: 50px 0 0 0;
+}
+.structure .task-three__title .container {
+  margin-left: 15px;
+  max-width: 1287px;
+}
+.structure .task-three__content {
+  display: flex;
+  justify-content: space-between;
+}
+.structure .task-three__list {
+  max-width: 1287px;
+  padding-bottom: 80px;
+}
+.structure .task-three__list-item:before {
+  content: "- ";
+}
+.structure .task-three__img {
+  padding-top: 30px;
+  object-fit: cover;
+}
+.structure .task-three__content-link .btn {
+  font-size: 16px;
+  font-weight: 800;
+  display: inline-block;
+  background-color: #FFFFFF;
+}
 
 /*---------- footer ----------*/
 .footer {
-  background-image: linear-gradient(270deg, #A5FAEE -1.5%, #50B0A2 50.97%, #336099 92.34%);
+  background-image: linear-gradient(270deg, #86e3d4 -1.5%, #50B0A2 50.97%, #336099 92.34%);
 }
 .footer__inner {
   display: flex;
