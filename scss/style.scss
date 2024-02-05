@@ -163,7 +163,7 @@
       width: 10px;
       height: 10px;
       border-radius: 50%;
-      box-shadow:  0 0 0 11px #6DB9AE;
+      box-shadow:  0 0 0 11px $shadow;
       background-color: $white;
       outline: 2px dashed $white;
       outline-offset: 10px;
@@ -424,6 +424,7 @@
   }
   .tab-content__task-one {
     background-color: $background;
+    border-radius: 0 0 50px 0;
     padding-top: 41px;
     padding-bottom: 60px;
   }
@@ -434,7 +435,7 @@
     font-weight: 500;
     background-color: $white;
     border-radius: 50px 0 0 0;
-    margin-left: 50%;
+    margin-left: 40%;
     margin-bottom: 35px;
     padding: 20px 30px 20px 80px;
     .title-line {
@@ -451,7 +452,7 @@
         width: 10px;
         height: 10px;
         border-radius: 50%;
-        background-color: $white;
+        background-color: $default;
       }
       &:after {
         position: absolute;
@@ -461,6 +462,7 @@
         width: 10px;
         height: 10px;
         border-radius: 50%;
+        box-shadow:  0 0 0 11px $shadow;
         background-color: $default;
         outline: 2px dashed $default;
         outline-offset: 10px;
@@ -469,6 +471,59 @@
   }
   .task-one__text {
     max-width: 1337px;
+  }
+  .task-two__title {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    font-size: 36px;
+    font-weight: 500;
+    color: $white;
+    background-image: $gradient;
+    border-radius: 0 50px 0 0;
+    margin-top: 42px;
+    margin-right: 40%;
+    margin-bottom: 80px;
+    padding: 20px 80px 20px 30px;
+    .title-line {
+      position: relative;
+      margin-right: 30px;
+      border-bottom: 2px dashed $white;
+      flex: 1 0 auto;
+      top: 50%;
+      transform: translateY(50%);
+      &:before {
+        position: absolute;
+        content: "";
+        top: -4px;
+        right: 0;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background-color: $white;
+      }
+      &:after {
+        position: absolute;
+        content: "";
+        top: -4px;
+        left: 0;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        box-shadow:  0 0 0 11px $shadow;
+        background-color: $white;
+        outline: 2px dashed $white;
+        outline-offset: 10px;
+      }
+    }
+  }
+  .task-two__content {
+    display: flex;
+    gap: 90px;
+    align-items: center;
+  }
+  .task-two__text {
+    max-width: 1017px;
   }
 }
 

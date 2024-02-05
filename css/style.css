@@ -281,7 +281,7 @@ body {
   width: 10px;
   height: 10px;
   border-radius: 50%;
-  box-shadow: 0 0 0 11px #6DB9AE;
+  box-shadow: 0 0 0 11px rgba(217, 217, 217, 0.2078431373);
   background-color: #FFFFFF;
   outline: 2px dashed #FFFFFF;
   outline-offset: 10px;
@@ -539,6 +539,7 @@ body {
 }
 .structure .tab-content__task-one {
   background-color: #C0E3DE;
+  border-radius: 0 0 50px 0;
   padding-top: 41px;
   padding-bottom: 60px;
 }
@@ -549,7 +550,7 @@ body {
   font-weight: 500;
   background-color: #FFFFFF;
   border-radius: 50px 0 0 0;
-  margin-left: 50%;
+  margin-left: 40%;
   margin-bottom: 35px;
   padding: 20px 30px 20px 80px;
 }
@@ -568,7 +569,7 @@ body {
   width: 10px;
   height: 10px;
   border-radius: 50%;
-  background-color: #FFFFFF;
+  background-color: #336099;
 }
 .structure .task-one__title .title-line:after {
   position: absolute;
@@ -578,12 +579,66 @@ body {
   width: 10px;
   height: 10px;
   border-radius: 50%;
+  box-shadow: 0 0 0 11px rgba(217, 217, 217, 0.2078431373);
   background-color: #336099;
   outline: 2px dashed #336099;
   outline-offset: 10px;
 }
 .structure .task-one__text {
   max-width: 1337px;
+}
+.structure .task-two__title {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  font-size: 36px;
+  font-weight: 500;
+  color: #FFFFFF;
+  background-image: linear-gradient(270deg, #A5FAEE -1.5%, #50B0A2 50.97%, #336099 92.34%);
+  border-radius: 0 50px 0 0;
+  margin-top: 42px;
+  margin-right: 40%;
+  margin-bottom: 80px;
+  padding: 20px 80px 20px 30px;
+}
+.structure .task-two__title .title-line {
+  position: relative;
+  margin-right: 30px;
+  border-bottom: 2px dashed #FFFFFF;
+  flex: 1 0 auto;
+  top: 50%;
+  transform: translateY(50%);
+}
+.structure .task-two__title .title-line:before {
+  position: absolute;
+  content: "";
+  top: -4px;
+  right: 0;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #FFFFFF;
+}
+.structure .task-two__title .title-line:after {
+  position: absolute;
+  content: "";
+  top: -4px;
+  left: 0;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  box-shadow: 0 0 0 11px rgba(217, 217, 217, 0.2078431373);
+  background-color: #FFFFFF;
+  outline: 2px dashed #FFFFFF;
+  outline-offset: 10px;
+}
+.structure .task-two__content {
+  display: flex;
+  gap: 90px;
+  align-items: center;
+}
+.structure .task-two__text {
+  max-width: 1017px;
 }
 
 /*---------- footer ----------*/
