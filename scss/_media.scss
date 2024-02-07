@@ -30,6 +30,14 @@
   }
 }
 
+@media (max-width: 1600px) {
+  .structure {
+    .tab-content__img {
+      position: static;
+    }
+  }
+}
+
 @media (max-width: 1400px) {
   .consultation {
     .container:before {
@@ -174,6 +182,11 @@
       display: flex;
       flex-direction: column;
       align-items: center;
+    }
+  }
+  .structure {
+    .tab-content__img {
+      padding-top: 100px;
     }
   }
 }

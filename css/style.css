@@ -739,6 +739,11 @@ body {
     margin: 33px 0 30px 60px;
   }
 }
+@media (max-width: 1600px) {
+  .structure .tab-content__img {
+    position: static;
+  }
+}
 @media (max-width: 1400px) {
   .consultation .container:before {
     max-width: 700px;
@@ -863,6 +868,9 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+  .structure .tab-content__img {
+    padding-top: 100px;
   }
 }
 @media (max-width: 800px) {
