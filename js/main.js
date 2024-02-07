@@ -55,3 +55,13 @@ document.addEventListener('click', (e) => {
     const elTabBtn = e.target.closest('.tab-btn');
     showTab(elTabBtn);
 });
+
+// ---------- Увеличенный шрифт ---------- //
+let texts = document.querySelectorAll('.small-font');
+let glassesBtn = document.querySelector("#glassesBtn");
+
+glassesBtn.addEventListener('click', () => {
+    for (let text of texts) {
+        text.classList.toggle('big-font');
+    }
+});
