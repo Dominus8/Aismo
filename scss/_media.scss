@@ -148,6 +148,30 @@
       margin-left: 0;
     }
   }
+  .structure {
+    .tab-content__header-inner {
+      gap: 50px;
+    }
+    .tab-content__title {
+      font-size: 28px;
+    }
+    .task-one__title {
+      font-size: 26px;
+      padding-left: 40px;
+    }
+    .task-two__title {
+      font-size: 26px;
+      padding-right: 40px;
+    }
+    .task-three__title {
+      font-size: 26px;
+    }
+    .task-one__text,
+    .task-two__text,
+    .task-three__list {
+      font-size: 24px;
+    }
+  }
   .footer {
     &__inner {
       flex-direction: column;
@@ -188,6 +212,22 @@
     .tab-content__img {
       padding-top: 100px;
     }
+    .task-one__title {
+      margin-left: 120px;
+    }
+    .task-two__title {
+      margin-right: 120px;
+    }
+    .task-two__content {
+      gap: 30px;
+    }
+    .task-two__img {
+      width: 150px;
+    }
+    .task-three__img {
+      width: 250px;
+      object-fit: contain;
+    }
   }
 }
 
@@ -224,6 +264,34 @@
     }
     &__content-block img {
       width: 100%;
+    }
+  }
+  .structure {
+    .tab-content__header-inner {
+      flex-direction: column;
+    }
+    .tab-content__header-inner .tab-content__logo {
+      padding-top: 100px;
+    }
+    .tab-content__header-inner .tab-content__logo:after {
+      top: 30px;
+    }
+    .tab-content__title {
+      padding: 30px 0;
+    }
+    .task-two__content {
+      flex-direction: column;
+    }
+    .task-three__content {
+      flex-direction: column-reverse;
+      align-items: center;
+    }
+    .task-three__img {
+      padding-top: 0;
+    }
+    .task-three__content-link {
+      display: flex;
+      justify-content: center;
     }
   }
 }
@@ -267,6 +335,21 @@
     .about__title {
       top: -85px;
       font-size: 24px;
+    }
+  }
+  .structure {
+    .tab-content__title {
+      font-size: 22px;
+    }
+    .task-one__title,
+    .task-two__title,
+    .task-three__title {
+      font-size: 20px;
+    }
+    .task-one__text,
+    .task-two__text,
+    .task-three__list {
+      font-size: 16px;
     }
   }
   .footer {
