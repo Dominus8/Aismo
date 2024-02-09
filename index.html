@@ -10,7 +10,7 @@
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
-		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="scss/style.css">
 		<!---------- FontAwesome CSS File (icon File) ---------->
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 	</head>
@@ -75,41 +75,45 @@
 							<nav class="menu small-font">
 								<ul class="menu__list">
 									<li class="menu__list-item">
-										<a class="menu__list-link" href="#">Городские порталы</a>
+										<a href="//mosreg.ru" target="_blank" class="menu__list-link">
+											Интернет-портал Правительства Московской области
+										</a>
 									</li>
 									<li class="menu__list-item">
+										<a id="cityPortals" class="menu__list-link" >Городские порталы</a>
+									</li>
+									<!-- <li class="menu__list-item">
 										<a class="menu__list-link" href="#">Голосование по Конституции Российской Федерации</a>
-									</li>
-									<li class="menu__list-item">
+									</li> -->
+									<!-- <li class="menu__list-item">
 										<a class="menu__list-link" href="#">Все о коронавирусе</a>
-									</li>
-									<li class="menu__list-item">
+									</li> -->
+									<!-- <li class="menu__list-item">
 										<a class="menu__list-link" href="#">Лица Победы</a>
+									</li> -->
+									<li class="menu__list-item">
+										<a class="menu__list-link" href="https://photo.riamo.ru/">Медиабанк Московской области</a>
 									</li>
 									<li class="menu__list-item">
-										<a class="menu__list-link" href="#">
-											Фотобанк Московской области</a>
+										<a id="socialProtection" class="menu__list-link" >Интернет-порталы управлений социальной защиты</a>
 									</li>
 									<li class="menu__list-item">
-										<a class="menu__list-link" href="#">Интернет-порталы управлений социальной защиты</a>
+										<a id="localGovernment" class="menu__list-link">Интернет-порталы органов местного самоуправления</a>
 									</li>
-									<li class="menu__list-item">
-										<a class="menu__list-link" href="#">Интернет-порталы органов местного самоуправления</a>
-									</li>
-									<li class="menu__list-item">
+									<!-- <li class="menu__list-item">
 										<a class="menu__list-link" href="#">Корзинка</a>
+									</li> -->
+									<li class="menu__list-item">
+										<a class="menu__list-link" href="http://mcd.riamo.ru/">Московские центральные диаметры</a>
 									</li>
 									<li class="menu__list-item">
-										<a class="menu__list-link" href="#">Московские центральные диаметры</a>
+										<a class="menu__list-link" href="https://zima.riamo.ru/">Зима в Подмосковье</a>
 									</li>
 									<li class="menu__list-item">
-										<a class="menu__list-link" href="#">Зима в Подмосковье</a>
+										<a class="menu__list-link" href="https://travel.riamo.ru/">Путь-дорога</a>
 									</li>
 									<li class="menu__list-item">
-										<a class="menu__list-link" href="#">Путь-дорога</a>
-									</li>
-									<li class="menu__list-item">
-										<a class="menu__list-link" href="#">Лето в Подмосковье</a>
+										<a class="menu__list-link" href="https://leto.riamo.ru/">Лето в Подмосковье</a>
 									</li>
 								</ul>
 							</nav>
@@ -129,9 +133,17 @@
 								<div class="swiper-wrapper small-font">
 									<div class="swiper-slide">
 										<div class="swiper-slide-inner">
-											<img src="./images/slide1.jpg" alt="Слайд 1">
+											<img src="./images/winter.jpeg" alt="Зима">
 											<div class="swiper-slide-text">
-												<p>Лица Победы</p>
+												<p>Зима в подмосковье</p>
+											</div>
+										</div>
+									</div>
+									<div class="swiper-slide">
+										<div class="swiper-slide-inner">
+											<img src="./images/summer.jpeg" alt="Лето">
+											<div class="swiper-slide-text">
+												<p>Лето в подмосковье</p>
 											</div>
 										</div>
 									</div>
@@ -139,13 +151,37 @@
 										<div class="swiper-slide-inner">
 											<img src="./images/slide2.jpg" alt="Слайд 2">
 											<div class="swiper-slide-text">
-												<p>Фотобанк Московской области</p>
+												<p>Медиабанк Московской области</p>
 											</div>
 										</div>
 									</div>
 									<div class="swiper-slide">
 										<div class="swiper-slide-inner">
-											<img src="./images/slide3.jpg" alt="Слайд 3">
+											<img src="./images/mcd.jpeg" alt="Слайд 3">
+											<div class="swiper-slide-text">
+												<p>Московские центральные диаметры</p>
+											</div>
+										</div>
+									</div>
+									<div class="swiper-slide">
+										<div class="swiper-slide-inner">
+											<img src="./images/gport.png" alt="Слайд 1">
+											<div class="swiper-slide-text">
+												<p>Городские порталы</p>
+											</div>
+										</div>
+									</div>
+									<div class="swiper-slide">
+										<div class="swiper-slide-inner">
+											<img src="./images/osz.jpeg" alt="Слайд 2">
+											<div class="swiper-slide-text">
+												<p>Интернет-порталы управлений социальной защиты</p>
+											</div>
+										</div>
+									</div>
+									<div class="swiper-slide">
+										<div class="swiper-slide-inner">
+											<img src="./images/omsu.jpeg" alt="Слайд 3">
 											<div class="swiper-slide-text">
 												<p>Интернет-порталы органов местного самоуправления</p>
 											</div>
@@ -153,25 +189,17 @@
 									</div>
 									<div class="swiper-slide">
 										<div class="swiper-slide-inner">
-											<img src="./images/slide1.jpg" alt="Слайд 1">
+											<img src="./images/pmo.png" alt="Слайд 3">
 											<div class="swiper-slide-text">
-												<p>Лица Победы</p>
+												<p>Интернет-портал Правительства Московской области</p>
 											</div>
 										</div>
 									</div>
 									<div class="swiper-slide">
 										<div class="swiper-slide-inner">
-											<img src="./images/slide2.jpg" alt="Слайд 2">
+											<img src="./images/road.jpeg" alt="Слайд 3">
 											<div class="swiper-slide-text">
-												<p>Фотобанк Московской области</p>
-											</div>
-										</div>
-									</div>
-									<div class="swiper-slide">
-										<div class="swiper-slide-inner">
-											<img src="./images/slide3.jpg" alt="Слайд 3">
-											<div class="swiper-slide-text">
-												<p>Интернет-порталы органов местного самоуправления</p>
+												<p>Путь-дорога</p>
 											</div>
 										</div>
 									</div>
@@ -226,10 +254,34 @@
 										<li class="about__content-list-item">
 											- обеспечение и реализация прав граждан, организаций, органов государственной власти и органов местного самоуправления на свободный поиск, получение, передачу, производство и распространение информации;
 										</li>
+										<li>
+											- осуществление технических действий в рамках официального опубликования и обнародования нормативных правовых актов органов государственной власти Московской области и иной официальной информации на Интернет – портале Правительства Московской области;
+										</li>
+										<li>
+											- обеспечение и реализация прав граждан, организаций, органов государственной власти и органов местного самоуправления на свободный поиск, получение, передачу, производство и распространение информации;
+										</li>
+										<li>
+											- оптимизация деятельности исполнительных органов государственной власти Московской области и обеспечения информационного обмена между ними;
+										</li>
+										<li>
+											- внедрение информационно-телекоммуникационных технологий в процедуры предоставления государственных услуг населению и организациям, а также в повседневную жизнь населения и в деятельность организаций;
+										</li>
+										<li>
+											- развитие и внедрение интегрированных информационных систем и технологий в различных сферах и направлениях деятельности;
+										</li>
+										<li>
+											- оказание услуг в сфере информационных технологий и иных сопутствующих услуг.
+										</li>
+										<li>
+											Настоящее время
+										</li>
+										<li>
+											В настоящее время ГАУ МО «АИС» Подмосковье» представляет собой профессиональный коллектив, обладающий компетенциями и возможностями для реализации проектов повышенной сложности в области веб-разработки и Интернет-СМИ.
+										</li>
 									</ul>
 								</div>
 								<div class="about__content-link small-font">
-									<a class="btn" href="#">Подробнее</a>
+									<!-- <a class="btn" href="#">Подробнее</a> -->
 								</div>
 							</div>
 						</div>
@@ -262,8 +314,8 @@
 							<a class="footer__content-link" href="#">Информация</a>
 							<br><br>
 							<p>Документы</p>
-							<a class="footer__content-link" href="#">Отчет СОУТ раздел V</a><br>
-							<a class="footer__content-link" href="#">Отчет СОУТ раздел VI</a><br><br>
+							<!-- <a class="footer__content-link" href="#">Отчет СОУТ раздел V</a><br>
+							<a class="footer__content-link" href="#">Отчет СОУТ раздел VI</a><br><br> -->
 							<a class="footer__content-link" href="https://aismo.ru/page.html" target="_blank">Политика в отношении обработки персональных данных</a>
 						</div>
 						<div class="footer__content small-font">
@@ -276,6 +328,151 @@
 				</div>
 			</footer>
 			<!---------- footer end ---------->
+
+			<!-- Модалки -->
+			<!-- Готпорталы -->
+			<div id="city-portals" class="modal">
+				<div class="modal-content">
+					<div class="modal-content__header">
+						<h3>Выберите городской портал</h3>
+						<span id="modal-close-button" class="modal-close">x</span>
+					</div>
+					<div class="modal-content__body">
+                        <a href="https://podolskriamo.ru/" target="_blank">В Подольске</a>
+                        <a href="https://korolevriamo.ru/" target="_blank">В Королеве</a>
+                        <a href="https://lubertsyriamo.ru/" target="_blank">В Люберцах</a>
+                        <a href="https://riamobalashiha.ru/" target="_blank">В Балашихе</a>
+                        <a href="https://mytischiriamo.ru/" target="_blank">В Мытищах</a>
+                        <a href="https://domodedovoriamo.ru/" target="_blank">В Домодедово</a>
+                        <a href="https://krasnogorskriamo.ru/" target="_blank">В Красногорске</a>
+                        <a href="https://sergposadriamo.ru/" target="_blank">В Сергиевом Посаде</a>
+                        <a href="https://reutovriamo.ru/" target="_blank">В Реутове</a>
+                        <a href="https://schelkovoriamo.ru/" target="_blank">В Щелкове</a>
+                	</div>
+				</div>
+			</div>
+
+			<!-- Интернет-порталы управлений социальной защиты -->
+
+			<div id="social-protection" class="modal">
+				<div class="modal-content">
+					<div class="modal-content__header">
+						<h3>Выберите городской портал</h3>
+						<span id="modal-close-button2" class="modal-close">x</span>
+					</div>
+					<div class="modal-content__body">
+                        <a href="https://volok.msr.mosreg.ru/" target="_blank">Волоколамское УСЗН</a>
+                        <a href="https://vosk.msr.mosreg.ru/" target="_blank">Воскресенское УСЗН</a>
+                        <a href="https://dmitrov.msr.mosreg.ru/" target="_blank">Дмитровское УСЗН</a>
+                        <!-- <a href="https://dolgoprud.msr.mosreg.ru/" target="_blank">Долгопрудненское УСЗН</a> -->
+                        <a href="https://domodedovo.msr.mosreg.ru/" target="_blank">Домодедовское УСЗН</a>
+                        <!-- <a href="https://dubna.msr.mosreg.ru/" target="_blank">Дубненское УСЗН</a> -->
+                        <!-- <a href="https://eg.msr.mosreg.ru/" target="_blank">Егорьевское УСЗН</a> -->
+                        <!-- <a href="https://zhuk.msr.mosreg.ru/" target="_blank">Жуковское УСЗН</a> -->
+                        <a href="https://zar.msr.mosreg.ru/" target="_blank">Зарайское УСЗН</a>
+                        <!-- <a href="https://istra.msr.mosreg.ru/" target="_blank">Истринское УСЗН</a> -->
+                        <!-- <a href="https://kashira.msr.mosreg.ru/" target="_blank">Каширское УСЗН</a> -->
+                        <!-- <a href="https://klim.msr.mosreg.ru/" target="_blank">Климовское УСЗН</a> -->
+                        <a href="https://klin.msr.mosreg.ru/" target="_blank">Клинское УСЗН</a>
+                        <!-- <a href="https://korolev.msr.mosreg.ru/" target="_blank">Королёвское УСЗН</a> -->
+                        <a href="https://krasnogorsk.msr.mosreg.ru/" target="_blank">Красногорское УСЗН</a>
+                        <a href="https://leninskoe.msr.mosreg.ru/" target="_blank">Ленинское УСЗН</a>
+                        <!-- <a href="https://lobnya.msr.mosreg.ru/" target="_blank">Лобненское УСЗН</a> -->
+                        <!-- <a href="https://luh.msr.mosreg.ru/" target="_blank">Луховицкое УСЗН</a> -->
+                        <!-- <a href="https://lit.msr.mosreg.ru/" target="_blank">Лыткаринское окружное УСЗН</a> -->
+                        <a href="https://lub.msr.mosreg.ru/" target="_blank">Люберецкое окружное УСЗН</a>
+                        <!-- <a href="https://mozh.msr.mosreg.ru/" target="_blank">Можайское УСЗН</a> -->
+                        <a href="https://mit.msr.mosreg.ru/" target="_blank">Мытищинское УСЗН</a>
+                        <a href="https://nf.msr.mosreg.ru/" target="_blank">Наро-Фоминское УСЗН</a>
+                        <a href="https://odin.msr.mosreg.ru/" target="_blank">Одинцовское УСЗН</a>
+                        <!-- <a href="https://ozery.msr.mosreg.ru/" target="_blank">Озерское УСЗН</a> -->
+                        <a href="https://noginsk.msr.mosreg.ru/" target="_blank">Окружное УСЗН (г. Ногинск)</a>
+                        <a href="https://old-elgor.msr.mosreg.ru/" target="_blank">Окружное УСЗН (г. Электрогорск)</a>
+                        <a href="https://old-pavpos.msr.mosreg.ru/" target="_blank">Окружное УСЗН (г. Павловский Посад)</a>
+                        <!-- <a href="https://krasnoznam.msr.mosreg.ru/" target="_blank">ОСЗН г. Краснознаменск</a> -->
+                        <!-- <a href="https://lospet.msr.mosreg.ru/" target="_blank">ОСЗН г. Лосино-Петровский</a> -->
+                        <!-- <a href="https://lot.msr.mosreg.ru/" target="_blank">ОСЗН г. Лотошино</a> -->
+                        <!-- <a href="https://roshal.msr.mosreg.ru/" target="_blank">ОСЗН г. Рошаль</a> -->
+                        <!-- <a href="https://serprud.msr.mosreg.ru/" target="_blank">ОСЗН г. Серебряные Пруды</a> -->
+                        <!-- <a href="https://chg.msr.mosreg.ru/" target="_blank">ОСЗН г. Черноголовка</a> -->
+                        <!-- <a href="https://ub.msr.mosreg.ru/" target="_blank">ОСЗН г. Юбилейный</a> -->
+                        <!-- <a href="https://zven.msr.mosreg.ru/" target="_blank">ОСЗН г.Звенигород</a> -->
+                        <!-- <a href="https://krasnoarm.msr.mosreg.ru/" target="_blank">ОСЗН г. Красноармейск</a> -->
+                        <!-- <a href="https://pushchino.msr.mosreg.ru/" target="_blank">ОСЗН г.Пущино</a> -->
+                        <!-- <a href="https://vlasiha.msr.mosreg.ru/" target="_blank">ОСЗН п. Власиха</a> -->
+                        <a href="https://podolsk.msr.mosreg.ru/" target="_blank">Подольское УСЗН</a>
+                        <!-- <a href="https://protvino.msr.mosreg.ru/" target="_blank">Протвинское УСЗН</a> -->
+                        <a href="https://pushkino.msr.mosreg.ru/" target="_blank">Пушкинское окружное УСЗН</a>
+                        <a href="https://ramen.msr.mosreg.ru/" target="_blank">Раменское окружное УСЗН</a>
+                        <!-- <a href="https://reutov.msr.mosreg.ru/" target="_blank">Реутовское УСЗН</a> -->
+                        <!-- <a href="https://ruza.msr.mosreg.ru/" target="_blank">Рузское УСЗН</a> -->
+                        <a href="https://sergpos.msr.mosreg.ru/" target="_blank">Сергиево-Посадское УСЗН</a>
+                        <a href="https://soln.msr.mosreg.ru/" target="_blank">Солнечногорское УСЗН</a>
+                        <a href="https://stupino.msr.mosreg.ru/" target="_blank">Ступинское УСЗН</a>
+                        <a href="https://taldom.msr.mosreg.ru/" target="_blank">Талдомское УСЗН</a>
+                        <a href="https://bal.msr.mosreg.ru/" target="_blank">УСЗН г.о. Балашиха</a>
+                        <a href="https://kolomna.msr.mosreg.ru/" target="_blank">УСЗН Коломна г.о.</a>
+                        <a href="https://oz.msr.mosreg.ru/" target="_blank">УСЗН Орехово-Зуево г.о.</a>
+                        <a href="https://serpuhov.msr.mosreg.ru/" target="_blank">УСЗН г.о. Серпухов</a>
+                        <a href="https://himki.msr.mosreg.ru/" target="_blank">Химкинское УСЗН</a>
+                        <!-- <a href="https://chehov.msr.mosreg.ru/" target="_blank">Чеховское УСЗН</a> -->
+                        <a href="https://shatura.msr.mosreg.ru/" target="_blank">Шатурское УСЗН</a>
+                        <!-- <a href="https://shah.msr.mosreg.ru/" target="_blank">Шаховское УСЗН</a> -->
+                        <a href="https://sch.msr.mosreg.ru/" target="_blank">Щелковское окружное УСЗН</a>
+                        <!-- <a href="https://els.msr.mosreg.ru/" target="_blank">Электростальское УСЗН</a> -->
+                	</div>
+				</div>
+			</div>
+
+
+			<div id="local-government" class="modal">
+				<div class="modal-content">
+					<div class="modal-content__header">
+						<h3>Выберите городской портал</h3>
+						<span id="modal-close-button3" class="modal-close">x</span>
+					</div>
+					<div class="modal-content__body">
+                        <a href="http://balashiha.mosreg.ru/" target="_blank">Балашиха г.о.</a>
+                        <a href="http://bogorodsky.mosreg.ru/" target="_blank">Богородский г.о.</a>
+                        <a href="http://volokolamsk.mosreg.ru/" target="_blank">Волоколамский г.о.</a>
+                        <a href="http://dzr.mosreg.ru/" target="_blank">Дзержинский г.о.</a>
+                        <a href="http://dubna.mosreg.ru/" target="_blank">Дубна г.о.</a>
+                        <a href="http://egoryevsk.mosreg.ru/" target="_blank">Егорьевск г.о.</a>
+                        <a href="http://zvezdny.mosreg.ru/" target="_blank">Звездный городок г.о.</a>
+                        <a href="https://pushkino.mosreg.ru/" target="_blank">Пушкино г.о</a>
+                        <a href="http://istra.mosreg.ru/" target="_blank">Истра г.о.</a>
+                        <a href="http://kotelniki.mosreg.ru/" target="_blank">Котельники г.о.</a>
+                        <a href="https://solreg.mosreg.ru/" target="_blank">Солнечногорск г.о</a>
+                        <a href="http://lytkarino.mosreg.ru/" target="_blank">Лыткарино г.о.</a>
+                        <a href="https://luhovitsy.mosreg.ru/" target="_blank">Луховицы г.о</a>
+                        <a href="http://mozhaisk.mosreg.ru/" target="_blank">Можайский г.о.</a>
+                        <a href="http://mytischi.mosreg.ru/" target="_blank">Мытищи г.о.</a>
+                        <a href="http://oz.mosreg.ru/" target="_blank">Орехово-Зуево г.о.</a>
+                        <a href="http://reutov.mosreg.ru/" target="_blank">Реутов г.о.</a>
+                        <a href="https://go-voshod.ru/" target="_blank">Восход г.о</a>
+                        <a href="http://pushchino.mosreg.ru/" target="_blank">Пущино г.о.</a>
+                        <a href="http://chekhov.mosreg.ru/" target="_blank">Чехов г.о.</a>
+                        <a href="http://shatura.mosreg.ru/" target="_blank">Шатура г.о.</a>
+                        <!-- <a href="http://admshmr.mosreg.ru" target="_blank">Щелково г.о.</a> -->
+                	</div>
+				</div>
+			</div>
+
+
+			<!-- Заказать сайт -->
+
+			<div id="callback" class="modal">
+				<div class="modal-content">
+					<div class="modal-content__header">
+						<h3>Выберите городской портал</h3>
+						<span id="modal-close-button4" class="modal-close">x</span>
+					</div>
+					<div class="modal-content__body">
+                        Телефон: +7 (495) 990-90-87
+						E-mail: info-ais@mosreg.ru
+                	</div>
+				</div>
+			</div>
 		</div>
 		
 		<!---------- libraries and plugins ---------->

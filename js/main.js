@@ -65,3 +65,44 @@ glassesBtn.addEventListener('click', () => {
         text.classList.toggle('big-font');
     }
 });
+
+// ---------- Модалки ---------- //
+
+document.getElementById('cityPortals').onclick=function(){
+    document.getElementById('city-portals').style.display = "block";
+}
+document.getElementById('modal-close-button').onclick=function(){
+    document.getElementById('city-portals').style.display = "none";
+}
+
+
+
+document.getElementById('socialProtection').onclick=function(){
+    document.getElementById('social-protection').style.display = "block";
+}
+document.getElementById('modal-close-button2').onclick=function(){
+    document.getElementById('social-protection').style.display = "none";
+}
+
+
+
+document.getElementById('localGovernment').onclick=function(){
+    document.getElementById('local-government').style.display = "block";
+}
+document.getElementById('modal-close-button3').onclick=function(){
+    document.getElementById('local-government').style.display = "none";
+}
+
+
+
+window.onclick=function(event){
+    if(event.target==document.getElementById('city-portals')){
+        document.getElementById('city-portals').style.display = "none";
+    }
+    if(event.target==document.getElementById('social-protection')){
+        document.getElementById('social-protection').style.display = "none";
+    }
+    if(event.target==document.getElementById('local-government')){
+        document.getElementById('local-government').style.display = "none";
+    }
+}
