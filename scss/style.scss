@@ -556,15 +556,19 @@ button{
     justify-content: space-between;
   }
   .task-three__list {
+    height: 275px;
     max-width: 1287px;
     padding-bottom: 80px;
+    overflow: hidden;
+
   }
   .task-three__list-item:before {
     content: "- ";
+    
   }
   .task-three__img {
     padding-top: 30px;
-    object-fit: cover;
+    object-fit: contain;
   }
   .task-three__content-link .btn {
     font-size: 16px;
@@ -606,7 +610,7 @@ button{
   }
 }
 
-/*---------- modal ----------*/
+/*---------- modals ----------*/
 
 .modal{
   display: none;
@@ -619,23 +623,36 @@ button{
   overflow: auto;
   background-color: rgba($color: #000000, $alpha: 0.6);
   .modal-content{
+    border-radius: 15px;
     background-color: #fefefe;
     margin: 15% auto;
     padding: 20px;
     border: 1px solid #888;
-    width: 40%;
+    width: max-content;
     &__header{
-
       text-align: center;
       margin-bottom: 10px;
+      .modal-title{
+        color: #000;
+        font-size: 24px;
+        font-weight: normal;
+        margin-bottom: 35px;
+      }
     }
     &__body{
       display: grid;
       grid-template-columns: auto auto auto;
-
+      grid-column-gap: 18px;
+      grid-row-gap: 20px;
+      // justify-items: center;
+      justify-content: center;
+      .modal-element{
+        padding: 5px;
+      }
     }   
   }
   .modal-close{
+    
     color: #AAA;
     float: right;
     font-size: 28px;

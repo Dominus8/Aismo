@@ -675,16 +675,18 @@ button {
   justify-content: space-between;
 }
 .structure .task-three__list {
+  height: 275px;
   max-width: 1287px;
   padding-bottom: 80px;
+  overflow: hidden;
 }
 .structure .task-three__list-item:before {
   content: "- ";
 }
 .structure .task-three__img {
   padding-top: 30px;
-  -o-object-fit: cover;
-     object-fit: cover;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 .structure .task-three__content-link .btn {
   font-size: 16px;
@@ -725,7 +727,7 @@ button {
   text-decoration: underline;
 }
 
-/*---------- modal ----------*/
+/*---------- modals ----------*/
 .modal {
   display: none;
   position: fixed;
@@ -738,19 +740,33 @@ button {
   background-color: rgba(0, 0, 0, 0.6);
 }
 .modal .modal-content {
+  border-radius: 15px;
   background-color: #fefefe;
   margin: 15% auto;
   padding: 20px;
   border: 1px solid #888;
-  width: 40%;
+  width: -moz-max-content;
+  width: max-content;
 }
 .modal .modal-content__header {
   text-align: center;
   margin-bottom: 10px;
 }
+.modal .modal-content__header .modal-title {
+  color: #000;
+  font-size: 24px;
+  font-weight: normal;
+  margin-bottom: 35px;
+}
 .modal .modal-content__body {
   display: grid;
   grid-template-columns: auto auto auto;
+  grid-column-gap: 18px;
+  grid-row-gap: 20px;
+  justify-content: center;
+}
+.modal .modal-content__body .modal-element {
+  padding: 5px;
 }
 .modal .modal-close {
   color: #AAA;

@@ -68,14 +68,14 @@ glassesBtn.addEventListener('click', () => {
 
 // ---------- Модалки ---------- //
 
+if(document.getElementById('cityPortals')){
+
 document.getElementById('cityPortals').onclick=function(){
-    document.getElementById('city-portals').style.display = "block";
+        document.getElementById('city-portals').style.display = "block";
 }
 document.getElementById('modal-close-button').onclick=function(){
     document.getElementById('city-portals').style.display = "none";
 }
-
-
 
 document.getElementById('socialProtection').onclick=function(){
     document.getElementById('social-protection').style.display = "block";
@@ -85,13 +85,29 @@ document.getElementById('modal-close-button2').onclick=function(){
 }
 
 
-
 document.getElementById('localGovernment').onclick=function(){
     document.getElementById('local-government').style.display = "block";
 }
 document.getElementById('modal-close-button3').onclick=function(){
     document.getElementById('local-government').style.display = "none";
 }
+
+
+
+document.getElementById('callBack').onclick=function(){
+    document.getElementById('callback').style.display = "block";
+}
+document.getElementById('modal-close-button4').onclick=function(){
+    document.getElementById('callback').style.display = "none";
+}
+
+document.getElementById('callBack2').onclick=function(){
+    document.getElementById('callback2').style.display = "block";
+}
+document.getElementById('modal-close-button5').onclick=function(){
+    document.getElementById('callback2').style.display = "none";
+}
+
 
 
 
@@ -104,5 +120,22 @@ window.onclick=function(event){
     }
     if(event.target==document.getElementById('local-government')){
         document.getElementById('local-government').style.display = "none";
+    }
+    if(event.target==document.getElementById('callback')){
+        document.getElementById('callback').style.display = "none";
+    }
+    if(event.target==document.getElementById('callback2')){
+        document.getElementById('callback2').style.display = "none";
+    }
+}
+}
+
+if(document.getElementById('taskThreeList')){
+    if(document.getElementById('taskThreeList').style.overflow = "hidden" ){
+        document.getElementById('taskThreeMore').onclick=function(){
+        document.getElementById('taskThreeList').style.overflow = "visible";
+        document.getElementById('taskThreeList').style.height = "auto";
+        }
+
     }
 }

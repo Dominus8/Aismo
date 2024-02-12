@@ -117,7 +117,7 @@
 									</li>
 								</ul>
 							</nav>
-							<button class="projects__sidebar-btn btn small-font" type="submit">Заказать сайт</button>
+							<button id="callBack" class="projects__sidebar-btn btn small-font">Заказать сайт</button>
 						</div>
 					</aside>
 					
@@ -224,7 +224,7 @@
 								</a>
 								и принимаете их.
 							</p>
-							<button class="consultation__content-btn btn small-font" type="submit">Связаться с нами</button>
+							<button id="callBack2" class="consultation__content-btn btn small-font" type="submit">Связаться с нами</button>
 						</div>
 					</div>
 				</section>
@@ -334,20 +334,20 @@
 			<div id="city-portals" class="modal">
 				<div class="modal-content">
 					<div class="modal-content__header">
-						<h3>Выберите городской портал</h3>
 						<span id="modal-close-button" class="modal-close">x</span>
+						<h2 class="modal-title">Выберите городской портал</h2>
 					</div>
 					<div class="modal-content__body">
-                        <a href="https://podolskriamo.ru/" target="_blank">В Подольске</a>
-                        <a href="https://korolevriamo.ru/" target="_blank">В Королеве</a>
-                        <a href="https://lubertsyriamo.ru/" target="_blank">В Люберцах</a>
-                        <a href="https://riamobalashiha.ru/" target="_blank">В Балашихе</a>
-                        <a href="https://mytischiriamo.ru/" target="_blank">В Мытищах</a>
-                        <a href="https://domodedovoriamo.ru/" target="_blank">В Домодедово</a>
-                        <a href="https://krasnogorskriamo.ru/" target="_blank">В Красногорске</a>
-                        <a href="https://sergposadriamo.ru/" target="_blank">В Сергиевом Посаде</a>
-                        <a href="https://reutovriamo.ru/" target="_blank">В Реутове</a>
-                        <a href="https://schelkovoriamo.ru/" target="_blank">В Щелкове</a>
+                        <a class="modal-element" href="https://podolskriamo.ru/" target="_blank">В Подольске</a>
+                        <a class="modal-element" href="https://korolevriamo.ru/" target="_blank">В Королеве</a>
+                        <a class="modal-element" href="https://lubertsyriamo.ru/" target="_blank">В Люберцах</a>
+                        <a class="modal-element" href="https://riamobalashiha.ru/" target="_blank">В Балашихе</a>
+                        <a class="modal-element" href="https://mytischiriamo.ru/" target="_blank">В Мытищах</a>
+                        <a class="modal-element" href="https://domodedovoriamo.ru/" target="_blank">В Домодедово</a>
+                        <a class="modal-element" href="https://krasnogorskriamo.ru/" target="_blank">В Красногорске</a>
+                        <a class="modal-element" href="https://sergposadriamo.ru/" target="_blank">В Сергиевом Посаде</a>
+                        <a class="modal-element" href="https://reutovriamo.ru/" target="_blank">В Реутове</a>
+                        <a class="modal-element" href="https://schelkovoriamo.ru/" target="_blank">В Щелкове</a>
                 	</div>
 				</div>
 			</div>
@@ -357,69 +357,39 @@
 			<div id="social-protection" class="modal">
 				<div class="modal-content">
 					<div class="modal-content__header">
-						<h3>Выберите городской портал</h3>
 						<span id="modal-close-button2" class="modal-close">x</span>
+						<h2 class="modal-title">Выберите портал управления социальной защиты</h2>
 					</div>
 					<div class="modal-content__body">
                         <a href="https://volok.msr.mosreg.ru/" target="_blank">Волоколамское УСЗН</a>
-                        <a href="https://vosk.msr.mosreg.ru/" target="_blank">Воскресенское УСЗН</a>
-                        <a href="https://dmitrov.msr.mosreg.ru/" target="_blank">Дмитровское УСЗН</a>
-                        <!-- <a href="https://dolgoprud.msr.mosreg.ru/" target="_blank">Долгопрудненское УСЗН</a> -->
-                        <a href="https://domodedovo.msr.mosreg.ru/" target="_blank">Домодедовское УСЗН</a>
-                        <!-- <a href="https://dubna.msr.mosreg.ru/" target="_blank">Дубненское УСЗН</a> -->
-                        <!-- <a href="https://eg.msr.mosreg.ru/" target="_blank">Егорьевское УСЗН</a> -->
-                        <!-- <a href="https://zhuk.msr.mosreg.ru/" target="_blank">Жуковское УСЗН</a> -->
-                        <a href="https://zar.msr.mosreg.ru/" target="_blank">Зарайское УСЗН</a>
-                        <!-- <a href="https://istra.msr.mosreg.ru/" target="_blank">Истринское УСЗН</a> -->
-                        <!-- <a href="https://kashira.msr.mosreg.ru/" target="_blank">Каширское УСЗН</a> -->
-                        <!-- <a href="https://klim.msr.mosreg.ru/" target="_blank">Климовское УСЗН</a> -->
-                        <a href="https://klin.msr.mosreg.ru/" target="_blank">Клинское УСЗН</a>
-                        <!-- <a href="https://korolev.msr.mosreg.ru/" target="_blank">Королёвское УСЗН</a> -->
-                        <a href="https://krasnogorsk.msr.mosreg.ru/" target="_blank">Красногорское УСЗН</a>
-                        <a href="https://leninskoe.msr.mosreg.ru/" target="_blank">Ленинское УСЗН</a>
-                        <!-- <a href="https://lobnya.msr.mosreg.ru/" target="_blank">Лобненское УСЗН</a> -->
-                        <!-- <a href="https://luh.msr.mosreg.ru/" target="_blank">Луховицкое УСЗН</a> -->
-                        <!-- <a href="https://lit.msr.mosreg.ru/" target="_blank">Лыткаринское окружное УСЗН</a> -->
-                        <a href="https://lub.msr.mosreg.ru/" target="_blank">Люберецкое окружное УСЗН</a>
-                        <!-- <a href="https://mozh.msr.mosreg.ru/" target="_blank">Можайское УСЗН</a> -->
-                        <a href="https://mit.msr.mosreg.ru/" target="_blank">Мытищинское УСЗН</a>
-                        <a href="https://nf.msr.mosreg.ru/" target="_blank">Наро-Фоминское УСЗН</a>
-                        <a href="https://odin.msr.mosreg.ru/" target="_blank">Одинцовское УСЗН</a>
-                        <!-- <a href="https://ozery.msr.mosreg.ru/" target="_blank">Озерское УСЗН</a> -->
-                        <a href="https://noginsk.msr.mosreg.ru/" target="_blank">Окружное УСЗН (г. Ногинск)</a>
-                        <a href="https://old-elgor.msr.mosreg.ru/" target="_blank">Окружное УСЗН (г. Электрогорск)</a>
-                        <a href="https://old-pavpos.msr.mosreg.ru/" target="_blank">Окружное УСЗН (г. Павловский Посад)</a>
-                        <!-- <a href="https://krasnoznam.msr.mosreg.ru/" target="_blank">ОСЗН г. Краснознаменск</a> -->
-                        <!-- <a href="https://lospet.msr.mosreg.ru/" target="_blank">ОСЗН г. Лосино-Петровский</a> -->
-                        <!-- <a href="https://lot.msr.mosreg.ru/" target="_blank">ОСЗН г. Лотошино</a> -->
-                        <!-- <a href="https://roshal.msr.mosreg.ru/" target="_blank">ОСЗН г. Рошаль</a> -->
-                        <!-- <a href="https://serprud.msr.mosreg.ru/" target="_blank">ОСЗН г. Серебряные Пруды</a> -->
-                        <!-- <a href="https://chg.msr.mosreg.ru/" target="_blank">ОСЗН г. Черноголовка</a> -->
-                        <!-- <a href="https://ub.msr.mosreg.ru/" target="_blank">ОСЗН г. Юбилейный</a> -->
-                        <!-- <a href="https://zven.msr.mosreg.ru/" target="_blank">ОСЗН г.Звенигород</a> -->
-                        <!-- <a href="https://krasnoarm.msr.mosreg.ru/" target="_blank">ОСЗН г. Красноармейск</a> -->
-                        <!-- <a href="https://pushchino.msr.mosreg.ru/" target="_blank">ОСЗН г.Пущино</a> -->
-                        <!-- <a href="https://vlasiha.msr.mosreg.ru/" target="_blank">ОСЗН п. Власиха</a> -->
-                        <a href="https://podolsk.msr.mosreg.ru/" target="_blank">Подольское УСЗН</a>
-                        <!-- <a href="https://protvino.msr.mosreg.ru/" target="_blank">Протвинское УСЗН</a> -->
-                        <a href="https://pushkino.msr.mosreg.ru/" target="_blank">Пушкинское окружное УСЗН</a>
-                        <a href="https://ramen.msr.mosreg.ru/" target="_blank">Раменское окружное УСЗН</a>
-                        <!-- <a href="https://reutov.msr.mosreg.ru/" target="_blank">Реутовское УСЗН</a> -->
-                        <!-- <a href="https://ruza.msr.mosreg.ru/" target="_blank">Рузское УСЗН</a> -->
-                        <a href="https://sergpos.msr.mosreg.ru/" target="_blank">Сергиево-Посадское УСЗН</a>
-                        <a href="https://soln.msr.mosreg.ru/" target="_blank">Солнечногорское УСЗН</a>
-                        <a href="https://stupino.msr.mosreg.ru/" target="_blank">Ступинское УСЗН</a>
-                        <a href="https://taldom.msr.mosreg.ru/" target="_blank">Талдомское УСЗН</a>
-                        <a href="https://bal.msr.mosreg.ru/" target="_blank">УСЗН г.о. Балашиха</a>
-                        <a href="https://kolomna.msr.mosreg.ru/" target="_blank">УСЗН Коломна г.о.</a>
-                        <a href="https://oz.msr.mosreg.ru/" target="_blank">УСЗН Орехово-Зуево г.о.</a>
-                        <a href="https://serpuhov.msr.mosreg.ru/" target="_blank">УСЗН г.о. Серпухов</a>
-                        <a href="https://himki.msr.mosreg.ru/" target="_blank">Химкинское УСЗН</a>
-                        <!-- <a href="https://chehov.msr.mosreg.ru/" target="_blank">Чеховское УСЗН</a> -->
-                        <a href="https://shatura.msr.mosreg.ru/" target="_blank">Шатурское УСЗН</a>
-                        <!-- <a href="https://shah.msr.mosreg.ru/" target="_blank">Шаховское УСЗН</a> -->
-                        <a href="https://sch.msr.mosreg.ru/" target="_blank">Щелковское окружное УСЗН</a>
-                        <!-- <a href="https://els.msr.mosreg.ru/" target="_blank">Электростальское УСЗН</a> -->
+                        <a class="modal-element" href="https://vosk.msr.mosreg.ru/" target="_blank">Воскресенское УСЗН</a>
+                        <a class="modal-element" href="https://dmitrov.msr.mosreg.ru/" target="_blank">Дмитровское УСЗН</a>
+                        <a class="modal-element" href="https://domodedovo.msr.mosreg.ru/" target="_blank">Домодедовское УСЗН</a>
+                        <a class="modal-element" href="https://zar.msr.mosreg.ru/" target="_blank">Зарайское УСЗН</a>
+                        <a class="modal-element" href="https://klin.msr.mosreg.ru/" target="_blank">Клинское УСЗН</a>
+                        <a class="modal-element" href="https://krasnogorsk.msr.mosreg.ru/" target="_blank">Красногорское УСЗН</a>
+                        <a class="modal-element" href="https://leninskoe.msr.mosreg.ru/" target="_blank">Ленинское УСЗН</a>
+                        <a class="modal-element" href="https://lub.msr.mosreg.ru/" target="_blank">Люберецкое окружное УСЗН</a>
+                        <a class="modal-element" href="https://mit.msr.mosreg.ru/" target="_blank">Мытищинское УСЗН</a>
+                        <a class="modal-element" href="https://nf.msr.mosreg.ru/" target="_blank">Наро-Фоминское УСЗН</a>
+                        <a class="modal-element" href="https://odin.msr.mosreg.ru/" target="_blank">Одинцовское УСЗН</a>
+                        <a class="modal-element" href="https://noginsk.msr.mosreg.ru/" target="_blank">Окружное УСЗН (г. Ногинск)</a>
+                        <a class="modal-element" href="https://old-elgor.msr.mosreg.ru/" target="_blank">Окружное УСЗН (г. Электрогорск)</a>
+                        <a class="modal-element" href="https://old-pavpos.msr.mosreg.ru/" target="_blank">Окружное УСЗН (г. Павловский Посад)</a>
+                        <a class="modal-element" href="https://podolsk.msr.mosreg.ru/" target="_blank">Подольское УСЗН</a>
+                        <a class="modal-element" href="https://pushkino.msr.mosreg.ru/" target="_blank">Пушкинское окружное УСЗН</a>
+                        <a class="modal-element" href="https://ramen.msr.mosreg.ru/" target="_blank">Раменское окружное УСЗН</a>
+                        <a class="modal-element" href="https://sergpos.msr.mosreg.ru/" target="_blank">Сергиево-Посадское УСЗН</a>
+                        <a class="modal-element" href="https://soln.msr.mosreg.ru/" target="_blank">Солнечногорское УСЗН</a>
+                        <a class="modal-element" href="https://stupino.msr.mosreg.ru/" target="_blank">Ступинское УСЗН</a>
+                        <a class="modal-element" href="https://taldom.msr.mosreg.ru/" target="_blank">Талдомское УСЗН</a>
+                        <a class="modal-element" href="https://bal.msr.mosreg.ru/" target="_blank">УСЗН г.о. Балашиха</a>
+                        <a class="modal-element" href="https://kolomna.msr.mosreg.ru/" target="_blank">УСЗН Коломна г.о.</a>
+                        <a class="modal-element" href="https://oz.msr.mosreg.ru/" target="_blank">УСЗН Орехово-Зуево г.о.</a>
+                        <a class="modal-element" href="https://serpuhov.msr.mosreg.ru/" target="_blank">УСЗН г.о. Серпухов</a>
+                        <a class="modal-element" href="https://himki.msr.mosreg.ru/" target="_blank">Химкинское УСЗН</a>
+                        <a class="modal-element" href="https://shatura.msr.mosreg.ru/" target="_blank">Шатурское УСЗН</a>
+                        <a class="modal-element" href="https://sch.msr.mosreg.ru/" target="_blank">Щелковское окружное УСЗН</a>
                 	</div>
 				</div>
 			</div>
@@ -428,32 +398,31 @@
 			<div id="local-government" class="modal">
 				<div class="modal-content">
 					<div class="modal-content__header">
-						<h3>Выберите городской портал</h3>
 						<span id="modal-close-button3" class="modal-close">x</span>
+						<h2 class="modal-title">Выберите портал органа местного самоуправления</h2>
 					</div>
 					<div class="modal-content__body">
-                        <a href="http://balashiha.mosreg.ru/" target="_blank">Балашиха г.о.</a>
-                        <a href="http://bogorodsky.mosreg.ru/" target="_blank">Богородский г.о.</a>
-                        <a href="http://volokolamsk.mosreg.ru/" target="_blank">Волоколамский г.о.</a>
-                        <a href="http://dzr.mosreg.ru/" target="_blank">Дзержинский г.о.</a>
-                        <a href="http://dubna.mosreg.ru/" target="_blank">Дубна г.о.</a>
-                        <a href="http://egoryevsk.mosreg.ru/" target="_blank">Егорьевск г.о.</a>
-                        <a href="http://zvezdny.mosreg.ru/" target="_blank">Звездный городок г.о.</a>
-                        <a href="https://pushkino.mosreg.ru/" target="_blank">Пушкино г.о</a>
-                        <a href="http://istra.mosreg.ru/" target="_blank">Истра г.о.</a>
-                        <a href="http://kotelniki.mosreg.ru/" target="_blank">Котельники г.о.</a>
-                        <a href="https://solreg.mosreg.ru/" target="_blank">Солнечногорск г.о</a>
-                        <a href="http://lytkarino.mosreg.ru/" target="_blank">Лыткарино г.о.</a>
-                        <a href="https://luhovitsy.mosreg.ru/" target="_blank">Луховицы г.о</a>
-                        <a href="http://mozhaisk.mosreg.ru/" target="_blank">Можайский г.о.</a>
-                        <a href="http://mytischi.mosreg.ru/" target="_blank">Мытищи г.о.</a>
-                        <a href="http://oz.mosreg.ru/" target="_blank">Орехово-Зуево г.о.</a>
-                        <a href="http://reutov.mosreg.ru/" target="_blank">Реутов г.о.</a>
-                        <a href="https://go-voshod.ru/" target="_blank">Восход г.о</a>
-                        <a href="http://pushchino.mosreg.ru/" target="_blank">Пущино г.о.</a>
-                        <a href="http://chekhov.mosreg.ru/" target="_blank">Чехов г.о.</a>
-                        <a href="http://shatura.mosreg.ru/" target="_blank">Шатура г.о.</a>
-                        <!-- <a href="http://admshmr.mosreg.ru" target="_blank">Щелково г.о.</a> -->
+                        <a class="modal-element" href="http://balashiha.mosreg.ru/" target="_blank">Балашиха г.о.</a>
+                        <a class="modal-element" href="http://bogorodsky.mosreg.ru/" target="_blank">Богородский г.о.</a>
+                        <a class="modal-element" href="http://volokolamsk.mosreg.ru/" target="_blank">Волоколамский г.о.</a>
+                        <a class="modal-element" href="http://dzr.mosreg.ru/" target="_blank">Дзержинский г.о.</a>
+                        <a class="modal-element" href="http://dubna.mosreg.ru/" target="_blank">Дубна г.о.</a>
+                        <a class="modal-element" href="http://egoryevsk.mosreg.ru/" target="_blank">Егорьевск г.о.</a>
+                        <a class="modal-element" href="http://zvezdny.mosreg.ru/" target="_blank">Звездный городок г.о.</a>
+                        <a class="modal-element" href="https://pushkino.mosreg.ru/" target="_blank">Пушкино г.о</a>
+                        <a class="modal-element" href="http://istra.mosreg.ru/" target="_blank">Истра г.о.</a>
+                        <a class="modal-element" href="http://kotelniki.mosreg.ru/" target="_blank">Котельники г.о.</a>
+                        <a class="modal-element" href="https://solreg.mosreg.ru/" target="_blank">Солнечногорск г.о</a>
+                        <a class="modal-element" href="http://lytkarino.mosreg.ru/" target="_blank">Лыткарино г.о.</a>
+                        <a class="modal-element" href="https://luhovitsy.mosreg.ru/" target="_blank">Луховицы г.о</a>
+                        <a class="modal-element" href="http://mozhaisk.mosreg.ru/" target="_blank">Можайский г.о.</a>
+                        <a class="modal-element" href="http://mytischi.mosreg.ru/" target="_blank">Мытищи г.о.</a>
+                        <a class="modal-element" href="http://oz.mosreg.ru/" target="_blank">Орехово-Зуево г.о.</a>
+                        <a class="modal-element" href="http://reutov.mosreg.ru/" target="_blank">Реутов г.о.</a>
+                        <a class="modal-element" href="https://go-voshod.ru/" target="_blank">Восход г.о</a>
+                        <a class="modal-element" href="http://pushchino.mosreg.ru/" target="_blank">Пущино г.о.</a>
+                        <a class="modal-element" href="http://chekhov.mosreg.ru/" target="_blank">Чехов г.о.</a>
+                        <a class="modal-element" href="http://shatura.mosreg.ru/" target="_blank">Шатура г.о.</a>
                 	</div>
 				</div>
 			</div>
@@ -464,12 +433,32 @@
 			<div id="callback" class="modal">
 				<div class="modal-content">
 					<div class="modal-content__header">
-						<h3>Выберите городской портал</h3>
 						<span id="modal-close-button4" class="modal-close">x</span>
+						<h2 class="modal-title">Свяжитесь с нами</h2>
 					</div>
 					<div class="modal-content__body">
-                        Телефон: +7 (495) 990-90-87
-						E-mail: info-ais@mosreg.ru
+						<div class="modal-element">
+							Телефон:&nbsp;<a href="tel:+74959909087">+7 (495) 990-90-87</a>
+						</div>
+						<div class="modal-element">
+							E-mail:&nbsp;<a href="mailto:info-ais@mosreg.ru">info-ais@mosreg.ru</a>
+						</div>						
+                	</div>
+				</div>
+			</div>
+			<div id="callback2" class="modal">
+				<div class="modal-content">
+					<div class="modal-content__header">
+						<span id="modal-close-button5" class="modal-close">x</span>
+						<h2 class="modal-title">Свяжитесь с нами</h2>
+					</div>
+					<div class="modal-content__body">
+						<div class="modal-element">
+							Телефон:&nbsp;<a href="tel:+74959909087">+7 (495) 990-90-87</a>
+						</div>
+						<div class="modal-element">
+							E-mail:&nbsp;<a href="mailto:info-ais@mosreg.ru">info-ais@mosreg.ru</a>
+						</div>						
                 	</div>
 				</div>
 			</div>
