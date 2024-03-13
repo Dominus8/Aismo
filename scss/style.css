@@ -125,6 +125,10 @@ body {
 }
 
 /*---------- header ----------*/
+a {
+  cursor: pointer;
+}
+
 button {
   cursor: pointer;
 }
@@ -594,9 +598,13 @@ button {
   outline-offset: 10px;
 }
 .structure .task-one__text {
+  line-height: 1.7;
+  font-size: 24px;
   max-width: 1337px;
 }
 .structure .tab-content__task-two {
+  line-height: 1.7;
+  font-size: 24px;
   padding-bottom: 100px;
 }
 .structure .task-two__title {
@@ -675,6 +683,8 @@ button {
   justify-content: space-between;
 }
 .structure .task-three__list {
+  line-height: 1.7;
+  font-size: 24px;
   height: 275px;
   max-width: 1287px;
   padding-bottom: 80px;
@@ -769,6 +779,7 @@ button {
   padding: 5px;
 }
 .modal .modal-close {
+  cursor: pointer;
   color: #AAA;
   float: right;
   font-size: 28px;

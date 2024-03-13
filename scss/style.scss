@@ -3,7 +3,10 @@
 @import 'global';
 
 /*---------- header ----------*/
+a{
+  cursor: pointer;
 
+}
 button{
   cursor: pointer;
 }
@@ -475,9 +478,14 @@ button{
     }
   }
   .task-one__text {
+    line-height: 1.7;
+    font-size: 24px;
     max-width: 1337px;
   }
   .tab-content__task-two {
+    line-height: 1.7;
+
+    font-size: 24px;
     padding-bottom: 100px;
   }
   .task-two__title {
@@ -556,10 +564,13 @@ button{
     justify-content: space-between;
   }
   .task-three__list {
+    line-height: 1.7;
+    font-size: 24px;
     height: 275px;
     max-width: 1287px;
     padding-bottom: 80px;
     overflow: hidden;
+
 
   }
   .task-three__list-item:before {
@@ -652,12 +663,13 @@ button{
     }   
   }
   .modal-close{
-    
+    cursor: pointer;
     color: #AAA;
     float: right;
     font-size: 28px;
     font-weight: bold;
   }
 }
+
 
 @import 'media';
