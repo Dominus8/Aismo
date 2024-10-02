@@ -509,7 +509,7 @@ button {
 }
 .structure .tab-content__img {
   position: relative;
-  top: -100px;
+  top: 0px;
   left: 100px;
 }
 .structure .tab-pane:not(.tab-pane-show) {
